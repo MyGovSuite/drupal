@@ -2,3 +2,4 @@
 mutagen.yml.lock
 
 vendor
+web/modules/contrib
