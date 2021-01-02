@@ -20,7 +20,8 @@
         "drupal/backup_migrate": "^4.1",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8",
+        "vlucas/phpdotenv": "^2.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -29,6 +30,11 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true
+    },
+    "autoload": {
+        "files": [
+            "load.environment.php"
+        ]
     },
     "extra": {
         "drupal-scaffold": {
