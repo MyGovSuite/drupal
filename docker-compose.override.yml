@@ -12,11 +12,11 @@ services:
     volumes:
     - ./:/var/www/html:cached
 
-  crond:
-    environment:
-      PHP_FPM_CLEAR_ENV: "no"
-    volumes:
-    - ./:/var/www/html:cached
+#  crond:
+#    environment:
+#      PHP_FPM_CLEAR_ENV: "no"
+#    volumes:
+#    - ./:/var/www/html:cached
 
   nginx:
     volumes:
