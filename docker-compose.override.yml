@@ -1,6 +1,11 @@
 version: "3.7"
 
 services:
+  mariadb:
+    volumes:
+      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+      - mariadb-volume:/var/lib/mysql # Use bind mount
+
   php:
     image: wodby/drupal:$DRUPAL_TAG
     environment:
@@ -21,3 +26,4 @@ services:
 
 volumes:
   codebase:
+  mariadb-volume:
