@@ -155,3 +155,16 @@ $settings['skip_permissions_hardening'] = TRUE;
 # $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
 
 $settings['config_sync_directory'] = '/var/www/html/config/sync';
+
+// Redis caching
+
+$settings['redis.connection']['host'] = 'redis';
+$settings['redis.connection']['port'] = '6379';
+//$settings['redis.connection']['password'] = '';
+$settings['redis.connection']['base'] = 0;
+$settings['redis.connection']['interface'] = 'PhpRedis';
+$settings['cache']['default'] = 'cache.backend.redis';
+$settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
+$settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
+$settings['cache']['bins']['config'] = 'cache.backend.chainedfast';
+$settings['container_yamls'][] = "modules/contrib/redis/example.services.yml";
