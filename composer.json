@@ -21,6 +21,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/domain": "^1.0@beta",
         "drupal/redis": "^1.4",
         "vlucas/phpdotenv": "^2.4"
     },
