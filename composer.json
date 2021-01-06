@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "defuse/php-encryption": "^2.2",
         "drupal/admin_toolbar": "^2.4",
         "drupal/backup_migrate": "^4.1",
         "drupal/core-composer-scaffold": "^8.8",
