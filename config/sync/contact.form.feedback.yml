@@ -1,4 +1,4 @@
-uuid: c8d557b5-390b-4fd6-8cc7-7921d87aa485
+uuid: 5e98ac9e-3e6d-4a7d-9c84-a22d74d861a9
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - admin@mygov.org
+  - admin@mygovcms.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
