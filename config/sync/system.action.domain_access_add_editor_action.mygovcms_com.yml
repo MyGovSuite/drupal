@@ -1,0 +1,14 @@
+uuid: c975db44-f609-46f5-9e48-b13affa1d8ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.mygovcms_com
+  module:
+    - domain_access
+id: domain_access_add_editor_action.mygovcms_com
+label: 'Add editors to the MyGov domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: mygovcms_com
