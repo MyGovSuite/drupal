@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_domain_access
+    - field.field.node.page.field_domain_all_affiliates
+    - field.field.node.page.field_domain_source
     - node.type.page
   module:
     - text
@@ -27,4 +30,7 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
