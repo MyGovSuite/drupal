@@ -36,7 +36,6 @@ parameters:
     # @default none
     # cookie_domain: '.example.com'
     #
-    cookie_domain: '.mygovcms.com'
   twig.config:
     # Twig debugging:
     #
