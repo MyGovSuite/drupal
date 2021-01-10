@@ -1,0 +1,11 @@
+uuid: 2bcf61bf-5ab2-4dd6-95d1-1915128291bf
+langcode: en
+status: true
+dependencies: {  }
+id: ny_putnam_mygovcms_com
+domain_id: 5426257
+hostname: ny.putnam.mygovcms.com
+name: 'NY - Putnam'
+scheme: http
+weight: 4
+is_default: false

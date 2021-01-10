@@ -1,0 +1,14 @@
+uuid: 42078240-5d18-47be-a981-d4756756fa8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.ny_putnam_mygovcms_com
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.ny_putnam_mygovcms_com
+label: 'Remove editors from the NY - Putnam domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: ny_putnam_mygovcms_com
