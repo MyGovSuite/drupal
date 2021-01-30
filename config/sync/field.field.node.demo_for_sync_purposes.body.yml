@@ -1,0 +1,23 @@
+uuid: de04b244-f136-412b-8650-be2dc14713ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.demo_for_sync_purposes
+  module:
+    - text
+id: node.demo_for_sync_purposes.body
+field_name: body
+entity_type: node
+bundle: demo_for_sync_purposes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
