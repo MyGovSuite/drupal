@@ -1,0 +1,11 @@
+uuid: 41ec74c1-cb59-4e1c-9c7f-df41c4f60e66
+langcode: en
+status: true
+dependencies: {  }
+id: ny_rockland_mygovcms_com
+domain_id: 5847852
+hostname: ny.rockland.mygovcms.com
+name: 'NY - Rockland'
+scheme: http
+weight: 5
+is_default: false
