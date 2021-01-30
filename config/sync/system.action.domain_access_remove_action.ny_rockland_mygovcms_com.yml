@@ -1,0 +1,14 @@
+uuid: 30266b18-e18f-488d-8ae5-628ae9f9e525
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.ny_rockland_mygovcms_com
+  module:
+    - domain_access
+id: domain_access_remove_action.ny_rockland_mygovcms_com
+label: 'Remove selected content from the NY - Rockland domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: ny_rockland_mygovcms_com
