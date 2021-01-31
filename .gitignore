@@ -1,5 +1,9 @@
 .idea/
+.docker-sync/
 mutagen.yml.lock
+
+mariadb-init/*.sql
+mariadb-init/*.sql.gz
 
 vendor
 web/modules/contrib
