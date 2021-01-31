@@ -1,0 +1,34 @@
+uuid: 0412cd0b-728b-4bab-8e8e-f5e64407226d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_content.body
+    - field.field.node.test_content.field_domain_access
+    - field.field.node.test_content.field_domain_all_affiliates
+    - field.field.node.test_content.field_domain_source
+    - node.type.test_content
+  module:
+    - text
+    - user
+id: node.test_content.default
+targetEntityType: node
+bundle: test_content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
