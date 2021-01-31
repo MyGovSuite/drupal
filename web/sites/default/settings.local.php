@@ -156,6 +156,14 @@ $settings['skip_permissions_hardening'] = TRUE;
 
 $settings['config_sync_directory'] = '/var/www/html/config/sync';
 
+$settings['file_public_path'] = 'sites/default/files';
+
+$settings['file_private_path'] = '/var/www/html/private-files';
+
+$settings['skip_permissions_hardening'] = FALSE;
+
+$settings['hash_salt'] = getenv('DRUPAL_HASH') ?? 'random-string';
+
 $databases['default']['default'] = [
   'database' => getenv('DB_NAME'),
   'driver' => getenv('DB_DRIVER'),
@@ -166,6 +174,14 @@ $databases['default']['default'] = [
   'prefix' => '',
   'username' => getenv('DB_USER'),
 ];
+
+// Disable file operations directly on server
+$settings['allow_authorize_operations'] = FALSE;
+
+// Fast 404 Pages
+$config['system.performance']['fast_404']['exclude_paths'] = '/\/(?:styles)|(?:system\/files)\//';
+$config['system.performance']['fast_404']['paths'] = '/\.(?:txt|png|gif|jpe?g|css|js|ico|swf|flv|cgi|bat|pl|dll|exe|asp)$/i';
+$config['system.performance']['fast_404']['html'] = '<!DOCTYPE html><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL "@path" was not found on this server.</p></body></html>';
 
 // Redis caching
 
