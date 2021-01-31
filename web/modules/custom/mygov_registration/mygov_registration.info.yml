@@ -1,0 +1,6 @@
+name: MyGovCMS Registration
+package: MyGovCMS
+description: Provides a registration form required for adding MyGov sites.
+
+type: module
+core_version_requirement: ^8.8.0 || ^9.0
