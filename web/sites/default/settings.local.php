@@ -156,6 +156,17 @@ $settings['skip_permissions_hardening'] = TRUE;
 
 $settings['config_sync_directory'] = '/var/www/html/config/sync';
 
+$databases['default']['default'] = [
+  'database' => getenv('DB_NAME'),
+  'driver' => getenv('DB_DRIVER'),
+  'host' => getenv('DB_HOST'),
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'password' => getenv('DB_PASSWORD'),
+  'port' => getenv('DB_PORT'),
+  'prefix' => '',
+  'username' => getenv('DB_USER'),
+];
+
 // Redis caching
 
 //$settings['redis.connection']['host'] = 'redis';
