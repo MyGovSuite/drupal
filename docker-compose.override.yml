@@ -30,9 +30,9 @@ services:
     labels:
     - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`,`${PROJECT_BASE_URL2}`,`${PROJECT_BASE_URL3}`)"
 
-  redis:
-    container_name: "${PROJECT_NAME}_redis"
-    image: wodby/redis:$REDIS_TAG
+#  redis:
+#    container_name: "${PROJECT_NAME}_redis"
+#    image: wodby/redis:$REDIS_TAG
 
 volumes:
   mariadb-volume:
