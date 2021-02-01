@@ -1,0 +1,5 @@
+services:
+  route_subscriber:
+    class: Drupal\mygov_registration\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
