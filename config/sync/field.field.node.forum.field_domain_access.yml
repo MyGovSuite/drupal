@@ -1,0 +1,25 @@
+uuid: ff2c0e50-a4a2-4d61-a3a0-4ad127586633
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_access
+    - node.type.forum
+id: node.forum.field_domain_access
+field_name: field_domain_access
+entity_type: node
+bundle: forum
+label: 'Domain Access'
+description: 'Select the affiliate domain(s) for this content'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\domain_access\DomainAccessManager::getDefaultValue'
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

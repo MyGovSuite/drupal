@@ -1,0 +1,25 @@
+uuid: 1b26a8f2-85d4-4359-9b17-9327e00f1034
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.payment
+id: node.payment.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: payment
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

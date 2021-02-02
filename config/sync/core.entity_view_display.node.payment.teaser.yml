@@ -1,0 +1,38 @@
+uuid: 5a9437ff-63c1-4e72-8751-46f9e58924f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.payment.body
+    - field.field.node.payment.field_domain_access
+    - field.field.node.payment.field_domain_all_affiliates
+    - field.field.node.payment.field_domain_source
+    - field.field.node.payment.field_payment
+    - node.type.payment
+  module:
+    - text
+    - user
+id: node.payment.teaser
+targetEntityType: node
+bundle: payment
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_payment: true

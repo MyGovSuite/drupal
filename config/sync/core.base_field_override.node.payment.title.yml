@@ -1,0 +1,18 @@
+uuid: cb78a4b8-e042-4431-ba6c-78f31f8ed121
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.payment
+id: node.payment.title
+field_name: title
+entity_type: node
+bundle: payment
+label: Payment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
