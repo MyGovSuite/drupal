@@ -19,6 +19,7 @@
         "defuse/php-encryption": "^2.2",
         "drupal/admin_toolbar": "^2.4",
         "drupal/backup_migrate": "^4.1",
+        "drupal/bootstrap": "^3.23",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
