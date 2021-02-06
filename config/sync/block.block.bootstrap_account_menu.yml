@@ -1,4 +1,4 @@
-uuid: bda8e95b-20fa-44ac-a79f-c76f85991d8e
+uuid: dd648661-9807-4fb9-a76d-8c7a1fe14c36
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - bootstrap
 _core:
-  default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
-id: bartik_account_menu
-theme: bartik
-region: secondary_menu
-weight: 0
+  default_config_hash: HrZTblWpMF4fo6BdbBcyHEu5Hp9ds1IZF3FiRd2Q8rU
+id: bootstrap_account_menu
+theme: bootstrap
+region: navigation_collapsible
+weight: 11
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -22,6 +22,6 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 2
   expand_all_items: false
 visibility: {  }

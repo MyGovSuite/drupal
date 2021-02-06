@@ -1,15 +1,15 @@
-uuid: 7241c124-2723-4619-add1-a876618f1a12
+uuid: bfd5e152-2708-45f5-8c3a-0fc06547a13d
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - bootstrap
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: bootstrap_content
+theme: bootstrap
 region: content
 weight: 0
 provider: null
