@@ -1,0 +1,34 @@
+uuid: c42d331d-9722-4013-847b-c5916ddfedee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about.body
+    - field.field.node.about.field_domain_access
+    - field.field.node.about.field_domain_all_affiliates
+    - field.field.node.about.field_domain_source
+    - node.type.about
+  module:
+    - text
+    - user
+id: node.about.default
+targetEntityType: node
+bundle: about
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
