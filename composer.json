@@ -23,6 +23,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/domain": "^1.0@beta",
+        "drupal/honeypot": "^2.0",
         "drupal/pathauto": "^1.8",
         "drupal/redis": "^1.4",
         "drupal/webform": "^6.0",
