@@ -1,0 +1,11 @@
+uuid: 640c569a-3255-4131-86dc-a8cea6aca44e
+langcode: en
+status: true
+dependencies: {  }
+id: hi_kauai_mygovcms_com
+domain_id: 3808060
+hostname: hi.kauai.mygovcms.com
+name: 'HI - Kauai'
+scheme: http
+weight: 7
+is_default: false

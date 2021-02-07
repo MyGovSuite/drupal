@@ -1,0 +1,14 @@
+uuid: a3db909f-76a5-4827-9d14-d107095ec185
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.hi_kauai_mygovcms_com
+  module:
+    - domain_access
+id: domain_access_add_action.hi_kauai_mygovcms_com
+label: 'Add selected content to the HI - Kauai domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: hi_kauai_mygovcms_com
