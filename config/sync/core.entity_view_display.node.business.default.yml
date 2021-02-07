@@ -1,0 +1,34 @@
+uuid: b39f4e04-33de-4139-9838-1536cb9a8d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business.body
+    - field.field.node.business.field_domain_access
+    - field.field.node.business.field_domain_all_affiliates
+    - field.field.node.business.field_domain_source
+    - node.type.business
+  module:
+    - text
+    - user
+id: node.business.default
+targetEntityType: node
+bundle: business
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

@@ -1,4 +1,4 @@
-uuid: 2911b35e-3696-436b-821b-d37492b85ec9
+uuid: ddcd033d-dbd4-49a0-a38b-65b7e0991e44
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'About Us'
-type: about_us
-description: 'About Us page'
+name: Government
+type: government
+description: 'Government page'
 help: ''
 new_revision: true
 preview_mode: 1
