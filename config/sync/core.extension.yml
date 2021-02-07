@@ -54,6 +54,7 @@ module:
   toolbar: 0
   tour: 0
   user: 0
+  views_bootstrap: 0
   views_ui: 0
   webform: 0
   webform_ui: 0
