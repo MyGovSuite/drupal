@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-printf "Executing init.sh \n\n"
+echo "Executing ${0}"
 
 if [ "$( docker container inspect -f '{{.State.Running}}' 'mygov_php' )" == "true" ]; then
 
@@ -19,8 +19,8 @@ if [ "$( docker container inspect -f '{{.State.Running}}' 'mygov_php' )" == "tru
   printf "Clear caches \n\n"
   docker exec "$(docker ps -a --filter name='mygov_php' --format "{{ .ID }}")" drush cache-rebuild -y
 
-  printf "Execution completed! \n\n"
+  printf "Execution completed!"
 
 else
-  printf "Error: mygov_php container is not running! \n\n"
+  printf "Error: mygov_php container is not running!"
 fi
