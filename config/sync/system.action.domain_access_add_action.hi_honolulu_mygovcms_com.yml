@@ -1,0 +1,14 @@
+uuid: c9fee247-3121-4e2c-a9e6-bf07dba6e135
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.hi_honolulu_mygovcms_com
+  module:
+    - domain_access
+id: domain_access_add_action.hi_honolulu_mygovcms_com
+label: 'Add selected content to the HI - Honolulu domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: hi_honolulu_mygovcms_com

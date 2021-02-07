@@ -1,0 +1,11 @@
+uuid: e8d9bb35-60d0-41e8-b8c9-f10ec609a7dd
+langcode: en
+status: true
+dependencies: {  }
+id: hi_honolulu_mygovcms_com
+domain_id: 2895718
+hostname: hi.honolulu.mygovcms.com
+name: 'HI - Honolulu'
+scheme: http
+weight: 6
+is_default: false

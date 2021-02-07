@@ -1,0 +1,14 @@
+uuid: 719bcc7a-4ccb-490a-b0a0-cc285a347254
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.hi_honolulu_mygovcms_com
+  module:
+    - domain_access
+id: domain_access_add_editor_action.hi_honolulu_mygovcms_com
+label: 'Add editors to the HI - Honolulu domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: hi_honolulu_mygovcms_com
