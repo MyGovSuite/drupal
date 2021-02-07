@@ -1,0 +1,34 @@
+uuid: 2114bba9-f862-42e8-9921-43485f11fe7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.government.body
+    - field.field.node.government.field_domain_access
+    - field.field.node.government.field_domain_all_affiliates
+    - field.field.node.government.field_domain_source
+    - node.type.government
+  module:
+    - text
+    - user
+id: node.government.default
+targetEntityType: node
+bundle: government
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

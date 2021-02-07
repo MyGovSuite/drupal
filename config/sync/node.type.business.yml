@@ -1,0 +1,18 @@
+uuid: 542f07f3-9649-47ff-8591-d6956c8d8b6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Business
+type: business
+description: 'For business page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
