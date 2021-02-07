@@ -6,6 +6,7 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  bootstrap_layouts: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -31,6 +32,7 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  layout_discovery: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
