@@ -56,6 +56,7 @@ module:
   webform: 0
   webform_ui: 0
   forum: 1
+  webform_bootstrap: 1
   views: 10
   standard: 1000
 theme:
