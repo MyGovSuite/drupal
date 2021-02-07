@@ -1,0 +1,22 @@
+uuid: c6fd92ca-09d9-4395-9e55-b6d62793f01a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mygov_theme
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: mygov_theme_messages
+theme: mygov_theme
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

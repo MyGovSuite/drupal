@@ -1,0 +1,22 @@
+uuid: 13b24967-ba65-44e4-934e-b24cab48820f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mygov_theme
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: mygov_theme_help
+theme: mygov_theme
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
