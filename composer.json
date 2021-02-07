@@ -28,6 +28,7 @@
         "drupal/honeypot": "^2.0",
         "drupal/pathauto": "^1.8",
         "drupal/redis": "^1.4",
+        "drupal/token": "^1.9",
         "drupal/webform": "^6.0",
         "vlucas/phpdotenv": "^2.4"
     },
