@@ -47,7 +47,7 @@ services:
     # Docker-sync for macOS users
 #    - docker-sync-mygov:/var/www/html
     labels:
-    - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`,`${PROJECT_BASE_URL2}`,`${PROJECT_BASE_URL3}`)"
+    - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`,`${PROJECT_BASE_URL2}`,`${PROJECT_BASE_URL3}`,`${PROJECT_BASE_URL4}`,`${PROJECT_BASE_URL5}`)"
 
 #  redis:
 #    container_name: "${PROJECT_NAME}_redis"
