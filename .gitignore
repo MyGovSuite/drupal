@@ -6,5 +6,9 @@ mariadb-init/*.sql
 mariadb-init/*.sql.gz
 
 vendor
-web/modules/contrib
+web/core/
+web/libraries/
+web/modules/contrib/
+web/profiles/contrib/
+web/themes/contrib/
 web/sites/default/files
