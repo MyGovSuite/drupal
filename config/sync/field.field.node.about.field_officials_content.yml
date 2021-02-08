@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_officials_content
     - node.type.about
+    - node.type.officials
 id: node.about.field_officials_content
 field_name: field_officials_content
 entity_type: node
@@ -17,5 +18,11 @@ default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:node'
-  handler_settings: {  }
+  handler_settings:
+    target_bundles:
+      officials: officials
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
