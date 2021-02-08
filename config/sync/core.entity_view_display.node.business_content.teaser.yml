@@ -1,0 +1,36 @@
+uuid: 53695b98-cdd9-4873-ae1a-3c84f9d12b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.business_content.body
+    - field.field.node.business_content.field_domain_access
+    - field.field.node.business_content.field_domain_all_affiliates
+    - field.field.node.business_content.field_domain_source
+    - node.type.business_content
+  module:
+    - text
+    - user
+id: node.business_content.teaser
+targetEntityType: node
+bundle: business_content
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

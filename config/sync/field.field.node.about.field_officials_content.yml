@@ -1,0 +1,21 @@
+uuid: 03119282-dadc-49c2-9c1e-8042424a286b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_officials_content
+    - node.type.about
+id: node.about.field_officials_content
+field_name: field_officials_content
+entity_type: node
+bundle: about
+label: 'officials content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

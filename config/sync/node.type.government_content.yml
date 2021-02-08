@@ -1,0 +1,18 @@
+uuid: e6f63fab-bf83-481b-a07d-8cccbe6192f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Government Content'
+type: government_content
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

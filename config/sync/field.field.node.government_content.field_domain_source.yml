@@ -1,0 +1,25 @@
+uuid: d0bc8be1-4bc6-4c58-9238-dde009adce8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_source
+    - node.type.government_content
+id: node.government_content.field_domain_source
+field_name: field_domain_source
+entity_type: node
+bundle: government_content
+label: 'Domain Source'
+description: 'Select the canonical domain for this content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference
