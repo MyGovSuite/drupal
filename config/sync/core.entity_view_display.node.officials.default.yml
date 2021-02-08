@@ -1,20 +1,20 @@
-uuid: c42d331d-9722-4013-847b-c5916ddfedee
+uuid: 17fbb1a8-fba5-46c1-b1c7-0da6a75224bd
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.about.body
-    - field.field.node.about.field_domain_access
-    - field.field.node.about.field_domain_all_affiliates
-    - field.field.node.about.field_domain_source
-    - field.field.node.about.field_officials_content
-    - node.type.about
+    - field.field.node.officials.body
+    - field.field.node.officials.field_domain_access
+    - field.field.node.officials.field_domain_all_affiliates
+    - field.field.node.officials.field_domain_source
+    - field.field.node.officials.field_position_held
+    - node.type.officials
   module:
     - text
     - user
-id: node.about.default
+id: node.officials.default
 targetEntityType: node
-bundle: about
+bundle: officials
 mode: default
 content:
   body:
@@ -24,14 +24,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_officials_content:
-    weight: 102
-    label: visually_hidden
-    settings:
-      link: true
-      view_mode: default
+  field_position_held:
+    weight: 100
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: text_default
     region: content
   links:
     weight: 100

@@ -1,0 +1,21 @@
+uuid: eb15764e-a05a-4b1f-8580-0f3d0953c478
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_held
+    - node.type.officials
+  module:
+    - text
+id: node.officials.field_position_held
+field_name: field_position_held
+entity_type: node
+bundle: officials
+label: 'Position Held'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

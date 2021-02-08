@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Business
+name: 'Business Landing Page'
 type: business
 description: 'For business page'
 help: ''

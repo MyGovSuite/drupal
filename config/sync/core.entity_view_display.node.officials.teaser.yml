@@ -1,21 +1,21 @@
-uuid: c1305605-b18b-4abb-8068-cfcab89b20ae
+uuid: 99fc1573-830e-45e4-ad5f-0c027ffd9e95
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.landing_page.body
-    - field.field.node.landing_page.field_content_reference
-    - field.field.node.landing_page.field_domain_access
-    - field.field.node.landing_page.field_domain_all_affiliates
-    - field.field.node.landing_page.field_domain_source
-    - node.type.landing_page
+    - field.field.node.officials.body
+    - field.field.node.officials.field_domain_access
+    - field.field.node.officials.field_domain_all_affiliates
+    - field.field.node.officials.field_domain_source
+    - field.field.node.officials.field_position_held
+    - node.type.officials
   module:
     - text
     - user
-id: node.landing_page.teaser
+id: node.officials.teaser
 targetEntityType: node
-bundle: landing_page
+bundle: officials
 mode: teaser
 content:
   body:
@@ -32,7 +32,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_content_reference: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_domain_source: true
+  field_position_held: true

@@ -1,20 +1,20 @@
-uuid: b78e12bf-b285-43ae-b800-272ad381fcb6
+uuid: 69a2ec01-6572-4675-ab23-5a72c2eb9580
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.landing_page.body
-    - field.field.node.landing_page.field_content_reference
-    - field.field.node.landing_page.field_domain_access
-    - field.field.node.landing_page.field_domain_all_affiliates
-    - field.field.node.landing_page.field_domain_source
-    - node.type.landing_page
+    - field.field.node.officials.body
+    - field.field.node.officials.field_domain_access
+    - field.field.node.officials.field_domain_all_affiliates
+    - field.field.node.officials.field_domain_source
+    - field.field.node.officials.field_position_held
+    - node.type.officials
   module:
     - path
     - text
-id: node.landing_page.default
+id: node.officials.default
 targetEntityType: node
-bundle: landing_page
+bundle: officials
 mode: default
 content:
   body:
@@ -33,16 +33,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_content_reference:
-    weight: 122
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_domain_access:
     type: options_buttons
     weight: 40
@@ -61,6 +51,14 @@ content:
     weight: 42
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_position_held:
+    weight: 110
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   path:
     type: path

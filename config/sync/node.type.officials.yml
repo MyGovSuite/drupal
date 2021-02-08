@@ -1,4 +1,4 @@
-uuid: 897260d6-93f6-4de7-8de7-c3e2528823a8
+uuid: 6ac88cdf-a918-430f-9d61-963aa6dc0bca
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Landing Page'
-type: landing_page
-description: 'Use Landing Page for top-level parent pages such as a Business or Department page.'
+name: 'Officials Information'
+type: officials
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1

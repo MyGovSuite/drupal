@@ -1,0 +1,19 @@
+uuid: 0c3e585c-cf17-4be1-9667-e6faf57b227a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_officials_content
+field_name: field_officials_content
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

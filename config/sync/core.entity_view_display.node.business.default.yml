@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.business.body
+    - field.field.node.business.field_business_content
     - field.field.node.business.field_domain_access
     - field.field.node.business.field_domain_all_affiliates
     - field.field.node.business.field_domain_source
@@ -23,11 +24,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_business_content:
+    weight: 102
+    label: visually_hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_domain_access: true
   field_domain_all_affiliates: true

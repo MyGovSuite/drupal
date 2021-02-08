@@ -1,13 +1,13 @@
-uuid: ddb912eb-eb3f-451b-8610-b9b2ea3ea37a
+uuid: c0b5dc7a-66c2-43c5-8375-26e16ab4c875
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.landing_page
-id: node.landing_page.promote
+    - node.type.officials
+id: node.officials.promote
 field_name: promote
 entity_type: node
-bundle: landing_page
+bundle: officials
 label: 'Promoted to front page'
 description: ''
 required: false

@@ -1,14 +1,14 @@
-uuid: 30995921-d528-4ac9-bee6-5db946e7e7e7
+uuid: 121b81a9-0dbd-46db-a8aa-9116cb70512e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_domain_all_affiliates
-    - node.type.landing_page
-id: node.landing_page.field_domain_all_affiliates
+    - node.type.business_content
+id: node.business_content.field_domain_all_affiliates
 field_name: field_domain_all_affiliates
 entity_type: node
-bundle: landing_page
+bundle: business_content
 label: 'Send to all affiliates'
 description: 'Make this content available on all domains.'
 required: false

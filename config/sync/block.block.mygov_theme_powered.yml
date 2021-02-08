@@ -1,0 +1,22 @@
+uuid: c08b9a3b-fe98-4771-90d2-67777aeed733
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mygov_theme
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: mygov_theme_powered
+theme: mygov_theme
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,14 +1,14 @@
-uuid: 5a911e1b-94c8-4ce9-b524-a40f82dcd013
+uuid: 3c22bad3-b659-4f4e-bea1-6dded125aaf1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_domain_source
-    - node.type.landing_page
-id: node.landing_page.field_domain_source
+    - node.type.officials
+id: node.officials.field_domain_source
 field_name: field_domain_source
 entity_type: node
-bundle: landing_page
+bundle: officials
 label: 'Domain Source'
 description: 'Select the canonical domain for this content.'
 required: false

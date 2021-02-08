@@ -1,16 +1,16 @@
-uuid: f1c82b13-7f90-445d-9505-a4c8aa1b7a5d
+uuid: 44d14aaa-0477-4e9a-97af-9026355ab4b2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.landing_page
+    - node.type.officials
   module:
     - text
-id: node.landing_page.body
+id: node.officials.body
 field_name: body
 entity_type: node
-bundle: landing_page
+bundle: officials
 label: Body
 description: ''
 required: false

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.about.field_domain_access
     - field.field.node.about.field_domain_all_affiliates
     - field.field.node.about.field_domain_source
+    - field.field.node.about.field_officials_content
     - node.type.about
   module:
     - path
@@ -50,6 +51,12 @@ content:
     weight: 42
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_officials_content:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   path:
     type: path
