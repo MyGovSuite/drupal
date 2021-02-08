@@ -1,4 +1,4 @@
-uuid: a4d2614e-cf94-43f0-a255-c20264507d20
+uuid: ee69792c-eadb-44d2-a1ae-cbdc3ddb8079
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Services Landing Page'
-type: services
-description: 'Services landing page'
+name: 'Services Content'
+type: services_content
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1

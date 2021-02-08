@@ -1,21 +1,20 @@
-uuid: 1bbbf863-7f90-4ce8-87ea-75a4de38fa89
+uuid: bb83a0c0-d49f-46ed-970c-4c384fe764fa
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.services.body
-    - field.field.node.services.field_domain_access
-    - field.field.node.services.field_domain_all_affiliates
-    - field.field.node.services.field_domain_source
-    - field.field.node.services.field_services_content
-    - node.type.services
+    - field.field.node.services_content.body
+    - field.field.node.services_content.field_domain_access
+    - field.field.node.services_content.field_domain_all_affiliates
+    - field.field.node.services_content.field_domain_source
+    - node.type.services_content
   module:
     - text
     - user
-id: node.services.teaser
+id: node.services_content.teaser
 targetEntityType: node
-bundle: services
+bundle: services_content
 mode: teaser
 content:
   body:
@@ -35,4 +34,3 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   field_domain_source: true
-  field_services_content: true

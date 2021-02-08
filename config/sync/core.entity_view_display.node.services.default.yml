@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.services.field_domain_access
     - field.field.node.services.field_domain_all_affiliates
     - field.field.node.services.field_domain_source
+    - field.field.node.services.field_services_content
     - node.type.services
   module:
     - text
@@ -23,11 +24,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_services_content:
+    weight: 102
+    label: visually_hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_domain_access: true
   field_domain_all_affiliates: true

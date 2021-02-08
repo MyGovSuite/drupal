@@ -1,0 +1,23 @@
+uuid: 0e12043c-ee82-4861-a64a-efe0484601b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.services_content
+  module:
+    - text
+id: node.services_content.body
+field_name: body
+entity_type: node
+bundle: services_content
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

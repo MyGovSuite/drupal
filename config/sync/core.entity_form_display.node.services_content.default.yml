@@ -1,20 +1,19 @@
-uuid: 9b5c7146-8056-4138-96ad-5ba09c6e736d
+uuid: 4ada57be-11e4-4aa8-b783-5631fc6ba66f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.services.body
-    - field.field.node.services.field_domain_access
-    - field.field.node.services.field_domain_all_affiliates
-    - field.field.node.services.field_domain_source
-    - field.field.node.services.field_services_content
-    - node.type.services
+    - field.field.node.services_content.body
+    - field.field.node.services_content.field_domain_access
+    - field.field.node.services_content.field_domain_all_affiliates
+    - field.field.node.services_content.field_domain_source
+    - node.type.services_content
   module:
     - path
     - text
-id: node.services.default
+id: node.services_content.default
 targetEntityType: node
-bundle: services
+bundle: services_content
 mode: default
 content:
   body:
@@ -51,12 +50,6 @@ content:
     weight: 42
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_services_content:
-    weight: 122
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   path:
     type: path
