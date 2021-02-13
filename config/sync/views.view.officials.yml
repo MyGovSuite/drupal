@@ -1,4 +1,4 @@
-uuid: ab031483-0de2-4518-b5c9-51b761cb6b4e
+uuid: 246601c1-f934-49c1-84be-92f2dce4bf06
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ dependencies:
   module:
     - node
     - user
-id: officials_page
-label: 'Officials Page'
+id: officials
+label: Officials
 module: views
 description: ''
 tag: ''
@@ -55,6 +55,15 @@ display:
           offset: 0
       style:
         type: grid
+        options:
+          uses_fields: false
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: 'entity:node'
         options:
@@ -149,12 +158,13 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Officials Page'
+      title: Officials
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -170,10 +180,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: officials-page
+      path: officials
       menu:
         type: normal
-        title: 'Officials Page'
+        title: Officials
         menu_name: main
     cache_metadata:
       max-age: -1
