@@ -155,6 +155,7 @@ display:
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -173,8 +174,13 @@ display:
       path: officials-page
       menu:
         type: normal
-        title: 'Officials Page'
+        title: Officials
         menu_name: main
+        description: ''
+        parent: ''
+        weight: 0
+        expanded: false
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
