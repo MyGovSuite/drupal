@@ -11,8 +11,8 @@ id: node.officials.body
 field_name: body
 entity_type: node
 bundle: officials
-label: Body
-description: ''
+label: 'Description of Official'
+description: 'Input information about the official'
 required: false
 translatable: true
 default_value: {  }

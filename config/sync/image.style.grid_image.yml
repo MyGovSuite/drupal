@@ -1,0 +1,15 @@
+uuid: fb2bfc9f-a290-4c2f-a27b-214a4d58e192
+langcode: en
+status: true
+dependencies: {  }
+name: grid_image
+label: 'Grid Image 300X200'
+effects:
+  39c21d8a-35b7-4b00-8f12-dba47f270d18:
+    uuid: 39c21d8a-35b7-4b00-8f12-dba47f270d18
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      upscale: false

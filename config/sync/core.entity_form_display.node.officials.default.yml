@@ -7,9 +7,12 @@ dependencies:
     - field.field.node.officials.field_domain_access
     - field.field.node.officials.field_domain_all_affiliates
     - field.field.node.officials.field_domain_source
+    - field.field.node.officials.field_official_image
     - field.field.node.officials.field_position_held
+    - image.style.thumbnail
     - node.type.officials
   module:
+    - image
     - path
     - text
 id: node.officials.default
@@ -51,6 +54,14 @@ content:
     weight: 42
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_official_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_position_held:
     weight: 110
