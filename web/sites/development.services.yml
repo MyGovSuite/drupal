@@ -4,30 +4,11 @@
 # 'example.settings.local.php' file, which sits next to this file.
 parameters:
   http.response.debug_cacheability_headers: true
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     twig.config:
     debug: true
   session.storage.options:
     cookie_domain: '.mygovcms.com'
-=======
-=======
->>>>>>> parent of 4dccfcbc (Exclude Node title module)
-=======
->>>>>>> parent of 4dccfcbc... Exclude Node title module
-  twig.config:
-    debug: true
-  session.storage.options:
-    cookie_domain: '.mygovcms.com'
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 4dccfcbc (Exclude Node title module)
-=======
->>>>>>> parent of 4dccfcbc (Exclude Node title module)
-=======
->>>>>>> parent of 4dccfcbc... Exclude Node title module
 services:
   cache.backend.null:
     class: Drupal\Core\Cache\NullBackendFactory
