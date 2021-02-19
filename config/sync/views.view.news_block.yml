@@ -1,17 +1,15 @@
-uuid: 1a1f5626-8519-4833-808a-1314a31efb03
+uuid: d0b604c1-7ec0-452c-abbb-7d9f5781ad04
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.storage.node.field_image
-    - node.type.events
+    - node.type.news
   module:
-    - image
     - node
     - user
-id: front_page_events
-label: front_page_events
+id: news_block
+label: news_block
 module: views
 description: ''
 tag: ''
@@ -55,76 +53,50 @@ display:
           items_per_page: 3
           offset: 0
       style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+        type: default
       row:
         type: 'entity:node'
         options:
-          relationship: none
           view_mode: teaser
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: ''
-            image_link: ''
-          group_column: ''
+          click_sort_column: value
+          type: string
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -134,7 +106,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
       filters:
         status:
           value: '1'
@@ -154,7 +125,7 @@ display:
           table: node_field_data
           field: type
           value:
-            events: events
+            news: news
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -177,7 +148,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: front_page_events
+      title: news_block
       header: {  }
       footer: {  }
       empty: {  }
@@ -191,8 +162,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
+      tags: {  }
   block_1:
     display_plugin: block
     id: block_1
@@ -207,5 +177,4 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_image'
+      tags: {  }
