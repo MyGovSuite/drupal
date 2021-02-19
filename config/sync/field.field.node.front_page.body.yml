@@ -1,0 +1,23 @@
+uuid: 267b8fbb-7ee3-4658-82b2-5cf57005b967
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.front_page
+  module:
+    - text
+id: node.front_page.body
+field_name: body
+entity_type: node
+bundle: front_page
+label: 'Description of City'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
