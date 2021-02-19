@@ -1,0 +1,38 @@
+uuid: 74ff8bd3-c2c7-44b9-ad68-62c8db5950ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_page_carousel
+  module:
+    - domain
+    - node
+    - views
+  theme:
+    - mygov_theme
+id: views_block__front_page_carousel_block_1
+theme: mygov_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:front_page_carousel-block_1'
+settings:
+  id: 'views_block:front_page_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  domain:
+    id: domain
+    domains: {  }
+    negate: null
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      front_page: front_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

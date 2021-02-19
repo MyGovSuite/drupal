@@ -5,11 +5,11 @@ dependencies: {  }
 name: carousel
 label: 'Carousel 1080x500'
 effects:
-  d68532ee-e7b4-4ecc-9bb4-ab7bc0c72798:
-    uuid: d68532ee-e7b4-4ecc-9bb4-ab7bc0c72798
-    id: image_scale
+  32982209-22c7-4f13-9eb9-1a79b3c35ba8:
+    uuid: 32982209-22c7-4f13-9eb9-1a79b3c35ba8
+    id: image_scale_and_crop
     weight: 1
     data:
       width: 1080
       height: 500
-      upscale: false
+      anchor: center-center

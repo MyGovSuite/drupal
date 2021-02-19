@@ -1,0 +1,46 @@
+uuid: b75c5a96-22c5-430e-a804-69904d3fa2a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.events.body
+    - field.field.node.events.field_domain_access
+    - field.field.node.events.field_domain_all_affiliates
+    - field.field.node.events.field_domain_source
+    - field.field.node.events.field_image
+    - image.style.large
+    - node.type.events
+  module:
+    - image
+    - text
+    - user
+id: node.events.default
+targetEntityType: node
+bundle: events
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 110
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 100
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

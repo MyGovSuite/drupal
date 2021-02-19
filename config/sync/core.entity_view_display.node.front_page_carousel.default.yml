@@ -20,7 +20,7 @@ content:
     weight: 90
     label: visually_hidden
     settings:
-      image_style: ''
+      image_style: carousel
       image_link: ''
       items: '5'
       itemsDesktop: '[1199,4]'
