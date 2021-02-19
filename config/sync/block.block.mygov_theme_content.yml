@@ -11,7 +11,7 @@ _core:
 id: mygov_theme_content
 theme: mygov_theme
 region: content
-weight: 2
+weight: 1
 provider: null
 plugin: system_main_block
 settings:

@@ -1,31 +1,31 @@
-uuid: 21caf676-0631-41e9-9800-bb51fb330b90
+uuid: 24c2ef7c-9b7a-475b-8b79-2c51d4efad7b
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.events.body
-    - field.field.node.events.field_domain_access
-    - field.field.node.events.field_domain_all_affiliates
-    - field.field.node.events.field_domain_source
-    - field.field.node.events.field_image
+    - field.field.node.news.body
+    - field.field.node.news.field_domain_access
+    - field.field.node.news.field_domain_all_affiliates
+    - field.field.node.news.field_domain_source
+    - field.field.node.news.field_image
     - image.style.grid_image
-    - node.type.events
+    - node.type.news
   module:
     - image
     - text
     - user
-id: node.events.teaser
+id: node.news.teaser
 targetEntityType: node
-bundle: events
+bundle: news
 mode: teaser
 content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 100
     settings:
-      trim_length: 100
+      trim_length: 600
     third_party_settings: {  }
     region: content
   field_image:
@@ -35,7 +35,7 @@ content:
     label: visually_hidden
     settings:
       image_style: grid_image
-      image_link: content
+      image_link: ''
     third_party_settings: {  }
   links:
     weight: 110

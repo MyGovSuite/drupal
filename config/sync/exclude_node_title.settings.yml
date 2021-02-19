@@ -22,6 +22,7 @@ content_types:
   payment: none
   services: none
   services_content: none
+  events: all
 content_type_modes:
   about: {  }
   about_us: {  }
@@ -48,3 +49,5 @@ content_type_modes:
   payment: {  }
   services: {  }
   services_content: {  }
+  events:
+    - teaser
