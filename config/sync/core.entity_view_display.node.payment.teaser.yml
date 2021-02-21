@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.payment.field_domain_access
     - field.field.node.payment.field_domain_all_affiliates
     - field.field.node.payment.field_domain_source
-    - field.field.node.payment.field_payment
     - node.type.payment
   module:
     - text
@@ -35,4 +34,3 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   field_domain_source: true
-  field_payment: true
