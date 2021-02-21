@@ -27,6 +27,7 @@
         "drupal/domain": "^1.0@beta",
         "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.3",
+        "drupal/mailsystem": "^4.3",
         "drupal/pathauto": "^1.8",
         "drupal/real_aes": "^2.3",
         "drupal/redis": "^1.4",
