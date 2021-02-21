@@ -30,6 +30,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/real_aes": "^2.3",
         "drupal/redis": "^1.4",
+        "drupal/smtp": "^1.0",
         "drupal/token": "^1.9",
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^5.24",
