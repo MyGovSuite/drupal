@@ -1,0 +1,17 @@
+uuid: a2586b82-8841-44db-b86b-217a6e265537
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Front Page Carousel'
+type: front_page_carousel
+description: 'Add images for your front page carousel'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

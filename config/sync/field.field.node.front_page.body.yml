@@ -1,19 +1,17 @@
-uuid: ba9b32a7-597b-428d-88ba-a8885cf16f4f
+uuid: 267b8fbb-7ee3-4658-82b2-5cf57005b967
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.webform
+    - node.type.front_page
   module:
     - text
-_core:
-  default_config_hash: '-Qu0UyzQ0jD4TDYq8fOasS-D-vGd3gSwzi15PzRJUD4'
-id: node.webform.body
+id: node.front_page.body
 field_name: body
 entity_type: node
-bundle: webform
-label: Body
+bundle: front_page
+label: 'Description of City'
 description: ''
 required: false
 translatable: true

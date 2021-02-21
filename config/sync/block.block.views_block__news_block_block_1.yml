@@ -1,0 +1,38 @@
+uuid: 6ef73bbb-6a02-4a19-bcbe-269b057f572d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_block
+  module:
+    - domain
+    - node
+    - views
+  theme:
+    - mygov_theme
+id: views_block__news_block_block_1
+theme: mygov_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:news_block-block_1'
+settings:
+  id: 'views_block:news_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '2'
+visibility:
+  domain:
+    id: domain
+    domains: {  }
+    negate: null
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      front_page: front_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,17 @@
+uuid: 9123bc89-5283-44a0-853b-605642f1bf1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Front Page'
+type: front_page
+description: 'Use this for your front page, add information about your city government in the body'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

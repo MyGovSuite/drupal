@@ -1,0 +1,61 @@
+uuid: 792a9aa8-9321-426d-82b5-78f44a645bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page_carousel.field_carousel_image
+    - field.field.node.front_page_carousel.field_domain_access
+    - field.field.node.front_page_carousel.field_domain_all_affiliates
+    - field.field.node.front_page_carousel.field_domain_source
+    - node.type.front_page_carousel
+  module:
+    - owlcarousel
+    - user
+id: node.front_page_carousel.default
+targetEntityType: node
+bundle: front_page_carousel
+mode: default
+content:
+  field_carousel_image:
+    weight: 90
+    label: visually_hidden
+    settings:
+      image_style: carousel
+      image_link: ''
+      items: '5'
+      itemsDesktop: '[1199,4]'
+      itemsDesktopSmall: '[979,3]'
+      itemsTablet: '[768,2]'
+      itemsMobile: '[479,1]'
+      singleItem: '1'
+      slideSpeed: '200'
+      paginationSpeed: '800'
+      rewindSpeed: '1000'
+      autoPlay: '1'
+      stopOnHover: '1'
+      prevText: prev
+      nextText: next
+      rewindNav: '1'
+      pagination: '1'
+      paginationNumbers: '1'
+      responsive: '1'
+      responsiveRefreshRate: '200'
+      mouseDrag: '1'
+      touchDrag: '1'
+      transitionStyle: fade
+      itemsScaleUp: 0
+      navigation: 0
+      scrollPerPage: 0
+      navigationText: '["prev","next"]'
+    third_party_settings: {  }
+    type: owlcarousel_field_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

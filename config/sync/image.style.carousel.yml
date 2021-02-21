@@ -1,0 +1,15 @@
+uuid: ff341e65-0a0b-47ce-b9ac-b790a58b4a7b
+langcode: en
+status: true
+dependencies: {  }
+name: carousel
+label: 'Carousel 1080x500'
+effects:
+  32982209-22c7-4f13-9eb9-1a79b3c35ba8:
+    uuid: 32982209-22c7-4f13-9eb9-1a79b3c35ba8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 500
+      anchor: center-center

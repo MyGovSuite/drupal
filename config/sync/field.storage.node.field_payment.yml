@@ -1,0 +1,20 @@
+uuid: 77a04fb5-ee5f-4169-b8ef-bf94083e1454
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - webform
+id: node.field_payment
+field_name: field_payment
+entity_type: node
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

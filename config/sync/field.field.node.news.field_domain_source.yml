@@ -1,14 +1,14 @@
-uuid: 108bbf2e-74f9-40fd-b50e-5d2f74473721
+uuid: 004452f9-a732-434c-9203-18afb3392d0a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_domain_source
-    - node.type.webform
-id: node.webform.field_domain_source
+    - node.type.news
+id: node.news.field_domain_source
 field_name: field_domain_source
 entity_type: node
-bundle: webform
+bundle: news
 label: 'Domain Source'
 description: 'Select the canonical domain for this content.'
 required: false

@@ -1,0 +1,25 @@
+uuid: 10d06b6a-ea0e-434d-90dd-e5f0f0ab526c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment
+    - node.type.payment
+  module:
+    - webform
+id: node.payment.field_payment
+field_name: field_payment
+entity_type: node
+bundle: payment
+label: Payment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

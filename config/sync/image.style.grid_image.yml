@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: grid_image
-label: 'Grid Image 300X200'
+label: 'Grid Image 300X150'
 effects:
   39c21d8a-35b7-4b00-8f12-dba47f270d18:
     uuid: 39c21d8a-35b7-4b00-8f12-dba47f270d18
@@ -11,5 +11,5 @@ effects:
     weight: 1
     data:
       width: 300
-      height: 200
+      height: 150
       upscale: false
