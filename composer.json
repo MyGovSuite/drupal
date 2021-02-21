@@ -31,7 +31,7 @@
         "drupal/redis": "^1.4",
         "drupal/token": "^1.9",
         "drupal/views_bootstrap": "^4.3",
-        "drupal/webform": "^6.0",
+        "drupal/webform": "^5.24",
         "vlucas/phpdotenv": "^2.4"
     },
     "conflict": {
