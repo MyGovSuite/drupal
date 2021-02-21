@@ -28,6 +28,7 @@
         "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.3",
         "drupal/pathauto": "^1.8",
+        "drupal/real_aes": "^2.3",
         "drupal/redis": "^1.4",
         "drupal/token": "^1.9",
         "drupal/views_bootstrap": "^4.3",
