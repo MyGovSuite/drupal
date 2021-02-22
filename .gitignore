@@ -13,3 +13,4 @@ web/profiles/contrib/
 web/themes/contrib/
 web/themes/custom/mygov_theme/css/
 web/sites/default/files
+web/sites/development.services.yml
