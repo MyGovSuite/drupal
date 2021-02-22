@@ -31,6 +31,7 @@
         "drupal/owlcarousel": "^1.0@alpha",
         "drupal/pathauto": "^1.8",
         "drupal/redis": "^1.4",
+        "drupal/rules": "^3.0@alpha",
         "drupal/token": "^1.9",
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^5.24",
