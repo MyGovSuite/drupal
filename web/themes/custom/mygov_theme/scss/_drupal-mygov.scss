@@ -1,0 +1,35 @@
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+  }
+
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+ }
+
+
+
+div {
+    .news-block-col {
+        margin-bottom: 25px;
+    }
+
+    .front-page-event-title {
+        text-align: center;
+        margin-top:50px;
+    }
+
+    .front-page-event-img {
+        margin-top:15px;
+        margin-left: auto;
+        margin-right: auto;
+        width:60%;   
+    }
+
+    .owl-slider-wrapper {
+        margin-bottom: 50px;
+    }
+}
+
