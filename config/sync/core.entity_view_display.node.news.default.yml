@@ -11,6 +11,7 @@ dependencies:
     - image.style.large
     - node.type.news
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -32,7 +33,9 @@ content:
     settings:
       image_style: large
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: news-img
     type: image
     region: content
   links:

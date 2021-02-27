@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.front_page_carousel.field_domain_source
     - node.type.front_page_carousel
   module:
+    - field_formatter_class
     - owlcarousel
     - user
 id: node.front_page_carousel.default
@@ -47,7 +48,9 @@ content:
       navigation: 0
       scrollPerPage: 0
       navigationText: '["prev","next"]'
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: carousel
     type: owlcarousel_field_formatter
     region: content
   links:

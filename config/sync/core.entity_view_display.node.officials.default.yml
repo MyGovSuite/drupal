@@ -12,6 +12,7 @@ dependencies:
     - image.style.medium
     - node.type.officials
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -33,7 +34,9 @@ content:
     settings:
       image_style: medium
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-img
     type: image
     region: content
   field_position_held:

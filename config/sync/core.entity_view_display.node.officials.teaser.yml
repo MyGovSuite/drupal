@@ -13,6 +13,7 @@ dependencies:
     - image.style.grid_image
     - node.type.officials
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -37,7 +38,9 @@ content:
     settings:
       image_style: grid_image
       image_link: content
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-teaser-img
 hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
