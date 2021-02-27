@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.officials.field_domain_source
     - field.field.node.officials.field_official_image
     - field.field.node.officials.field_position_held
-    - image.style.medium
+    - image.style.officials_image
     - node.type.officials
   module:
     - field_formatter_class
@@ -34,7 +34,7 @@ content:
     weight: 90
     label: visually_hidden
     settings:
-      image_style: medium
+      image_style: officials_image
       image_link: ''
     third_party_settings:
       field_formatter_class:
