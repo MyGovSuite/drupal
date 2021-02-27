@@ -26,7 +26,9 @@ content:
     type: text_default
     weight: 101
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-description
     region: content
   field_official_image:
     weight: 90
@@ -43,7 +45,9 @@ content:
     weight: 100
     label: above
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-position-held
     type: text_default
     region: content
   links:

@@ -27,8 +27,10 @@ content:
     type: text_summary_or_trimmed
     weight: 101
     settings:
-      trim_length: 50
-    third_party_settings: {  }
+      trim_length: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     region: content
   field_official_image:
     type: image
@@ -41,9 +43,13 @@ content:
     third_party_settings:
       field_formatter_class:
         class: official-teaser-img
+  links:
+    weight: 102
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   field_domain_source: true
   field_position_held: true
-  links: true

@@ -56,7 +56,7 @@ display:
         type: grid
         options:
           uses_fields: false
-          columns: 4
+          columns: 1
           automatic_width: true
           alignment: horizontal
           col_class_default: true

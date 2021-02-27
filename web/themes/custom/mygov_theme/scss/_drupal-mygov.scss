@@ -32,31 +32,6 @@ div {
         margin-bottom: 50px;
     }
 
-    .news-col {
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-     .newspage-title {
-        width: 60%;
-        float:left;
-        margin-left: auto;
-        text-align:left;
-     }
-
-     .newspage-body {
-        width: 60%;
-        float:left;
-        margin-left: auto;
-        text-align: left;
-     }
-
-     .newspage-img {
-        width: 40%;
-        float:right;
-        margin-right: auto
-    }
-
     .view-id-news {
         img {
             margin-left: auto;
@@ -65,7 +40,62 @@ div {
             margin-bottom:8%;
             max-width:75%;
         }
+        .news-col {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+         .newspage-title {
+            width: 60%;
+            float:left;
+            margin-left: auto;
+            text-align:left;
+         }
+    
+         .newspage-body {
+            width: 60%;
+            float:left;
+            margin-left: auto;
+            text-align: left;
+         }
+    
+         .newspage-img {
+            width: 40%;
+            float:right;
+            margin-right: auto
+        }
     }
+
+    .view-officials-page {
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+
+        .officials-col {
+            width:33%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            .links, h3 {
+                text-align: center;
+            }
+      
+        }
+
+        .official-teaser-img {
+            width: 250px;
+            float:left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+            
+
+
+    }
+
+
 
 }
 

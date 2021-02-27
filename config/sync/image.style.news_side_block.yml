@@ -1,0 +1,15 @@
+uuid: 2ac58a0a-4bf4-44b3-afd1-e30feea9c698
+langcode: en
+status: true
+dependencies: {  }
+name: news_side_block
+label: 'News Side Block 240x125'
+effects:
+  0923ce87-ef23-438d-9991-211565613efd:
+    uuid: 0923ce87-ef23-438d-9991-211565613efd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 125
+      anchor: center-center
