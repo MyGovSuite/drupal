@@ -3,11 +3,6 @@ framework:
     theme:
       css/style.css: {}
 
-fonts:
-  css:
-    theme:
-      'https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap': { type: external, minified: true } 
-
 # Uncomment for LESS source JavaScript files.
 #  js:
 #    bootstrap/js/affix.js: {}
