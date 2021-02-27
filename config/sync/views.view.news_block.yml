@@ -53,7 +53,16 @@ display:
           items_per_page: 3
           offset: 0
       style:
-        type: default
+        type: grid
+        options:
+          uses_fields: false
+          columns: 1
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: news_block-col
+          row_class_default: true
+          row_class_custom: news_block-row
       row:
         type: 'entity:node'
         options:

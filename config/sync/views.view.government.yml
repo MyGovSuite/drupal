@@ -54,6 +54,15 @@ display:
           offset: 0
       style:
         type: grid
+        options:
+          uses_fields: false
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: government-col
+          row_class_default: true
+          row_class_custom: government-row
       row:
         type: 'entity:node'
         options:
