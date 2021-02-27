@@ -31,5 +31,41 @@ div {
     .owl-slider-wrapper {
         margin-bottom: 50px;
     }
+
+    .news-col {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+     .newspage-title {
+        width: 60%;
+        float:left;
+        margin-left: auto;
+        text-align:left;
+     }
+
+     .newspage-body {
+        width: 60%;
+        float:left;
+        margin-left: auto;
+        text-align: left;
+     }
+
+     .newspage-img {
+        width: 40%;
+        float:right;
+        margin-right: auto
+    }
+
+    .view-id-news {
+        img {
+            margin-left: auto;
+            margin-right:auto;
+            width:100%;
+            margin-bottom:8%;
+            max-width:75%;
+        }
+    }
+
 }
 
