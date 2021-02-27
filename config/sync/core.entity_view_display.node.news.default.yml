@@ -8,9 +8,10 @@ dependencies:
     - field.field.node.news.field_domain_all_affiliates
     - field.field.node.news.field_domain_source
     - field.field.node.news.field_image
-    - image.style.large
+    - image.style.news_1140x500
     - node.type.news
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -27,14 +28,16 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
+    type: image
     weight: 100
+    region: content
     label: visually_hidden
     settings:
-      image_style: large
+      image_style: news_1140x500
       image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
+    third_party_settings:
+      field_formatter_class:
+        class: news-img
   links:
     weight: 102
     region: content

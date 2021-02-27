@@ -9,9 +9,10 @@ dependencies:
     - field.field.node.officials.field_domain_source
     - field.field.node.officials.field_official_image
     - field.field.node.officials.field_position_held
-    - image.style.medium
+    - image.style.officials_image
     - node.type.officials
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -25,22 +26,28 @@ content:
     type: text_default
     weight: 101
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-description
     region: content
   field_official_image:
     weight: 90
     label: visually_hidden
     settings:
-      image_style: medium
+      image_style: officials_image
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-img
     type: image
     region: content
   field_position_held:
     weight: 100
     label: above
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: official-position-held
     type: text_default
     region: content
   links:

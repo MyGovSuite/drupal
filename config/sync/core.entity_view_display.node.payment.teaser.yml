@@ -27,10 +27,10 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 102
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_domain_access: true
   field_domain_all_affiliates: true

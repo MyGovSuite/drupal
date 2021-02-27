@@ -1,0 +1,15 @@
+uuid: 50039c3e-8228-4109-8524-6a3d87a8340b
+langcode: en
+status: true
+dependencies: {  }
+name: officials_image
+label: 'Officials Image 250x300'
+effects:
+  471eb436-d6a8-4bb3-89a4-1fc346174e9a:
+    uuid: 471eb436-d6a8-4bb3-89a4-1fc346174e9a
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: 300
+      upscale: false

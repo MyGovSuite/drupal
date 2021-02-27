@@ -12,6 +12,7 @@ dependencies:
     - image.style.news_grid
     - node.type.news
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -36,7 +37,9 @@ content:
     settings:
       image_style: news_grid
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: news-teaser-img
   links:
     weight: 110
     region: content
