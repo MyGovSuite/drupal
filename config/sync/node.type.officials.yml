@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Officials Information'
 type: officials
-description: ''
+description: 'Create a content page about your local officials'
 help: ''
 new_revision: true
 preview_mode: 1

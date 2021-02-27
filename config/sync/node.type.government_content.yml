@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Government Content'
 type: government_content
-description: ''
+description: 'Create content type to inform visitors about your government'
 help: ''
 new_revision: true
 preview_mode: 1
