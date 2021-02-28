@@ -25,7 +25,9 @@ content:
     type: text_default
     weight: 110
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: event-body
     region: content
   field_image:
     weight: 100

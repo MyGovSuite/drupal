@@ -173,6 +173,22 @@ div {
         }
     }
 
+    /* Events Content Page */
+
+
+    .events {
+        width: 100%;
+        overflow: hidden;
+
+        .event-img {
+            width: 40%;
+            float:left;
+            margin-right: 30px;
+            margin-bottom:10px;
+        }
+
+    }
+
 
 }
 
