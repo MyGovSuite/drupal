@@ -1,0 +1,18 @@
+uuid: 69bd3cbf-17f6-4bbf-a86c-f48c4f4082da
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.front_page
+id: node.front_page.title
+field_name: title
+entity_type: node
+bundle: front_page
+label: 'Your County Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
