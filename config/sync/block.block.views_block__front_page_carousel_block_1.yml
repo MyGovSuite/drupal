@@ -6,7 +6,7 @@ dependencies:
     - views.view.front_page_carousel
   module:
     - domain
-    - node
+    - system
     - views
   theme:
     - mygov_theme
@@ -29,10 +29,8 @@ visibility:
     domains: {  }
     negate: null
     context_mapping: {  }
-  node_type:
-    id: node_type
-    bundles:
-      front_page: front_page
+  request_path:
+    id: request_path
+    pages: '<front>'
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }
