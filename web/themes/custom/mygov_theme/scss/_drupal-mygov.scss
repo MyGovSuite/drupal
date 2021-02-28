@@ -9,6 +9,9 @@
     font-size: 15px;
  }
 
+ .breadcrumb {
+    display: none;
+  }
 
 
 div {
@@ -134,10 +137,7 @@ div {
     }
 
 
-}
-
-
- /* Events Teaser Page */
+    /* Events Teaser Page */
 
     .view-id-events {
         img {
@@ -172,3 +172,9 @@ div {
             margin-right: auto
         }
     }
+
+
+}
+
+
+ 
