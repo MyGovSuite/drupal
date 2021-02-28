@@ -49,6 +49,7 @@ module:
   search: 0
   search_api: 0
   search_api_solr: 0
+  search_api_solr_admin: 0
   shortcut: 0
   system: 0
   taxonomy: 0
