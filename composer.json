@@ -41,6 +41,10 @@
         "drupal/webform_encrypt": "^1.0@alpha",
         "vlucas/phpdotenv": "^2.4"
     },
+    "require-dev": {
+        "drupal/console": "~1.0",
+        "drupal/console-extend-plugin": "^0.9.5"
+    },
     "conflict": {
         "drupal/drupal": "*"
     },
