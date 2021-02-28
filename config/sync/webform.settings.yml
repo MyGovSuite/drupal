@@ -185,8 +185,22 @@ ui:
   toolbar_item: false
 libraries:
   excluded_libraries:
+    - algolia.places
     - choices
+    - ckeditor.autogrow
+    - ckeditor.codemirror
+    - ckeditor.fakeobjects
+    - ckeditor.image
+    - ckeditor.link
+    - codemirror
     - jquery.chosen
+    - jquery.inputmask
+    - jquery.intl-tel-input
+    - jquery.rateit
+    - jquery.textcounter
+    - jquery.timepicker
+    - progress-tracker
+    - signature_pad
 requirements:
   cdn: true
   bootstrap: true
