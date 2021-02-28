@@ -1,14 +1,14 @@
-uuid: 69bd3cbf-17f6-4bbf-a86c-f48c4f4082da
+uuid: 0c9587aa-a3e7-4c31-a9fa-3143796806a0
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.front_page
-id: node.front_page.title
+    - node.type.officials
+id: node.officials.title
 field_name: title
 entity_type: node
-bundle: front_page
-label: 'County Name'
+bundle: officials
+label: 'Official''s Name'
 description: ''
 required: true
 translatable: true

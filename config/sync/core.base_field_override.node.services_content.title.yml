@@ -1,14 +1,14 @@
-uuid: 69bd3cbf-17f6-4bbf-a86c-f48c4f4082da
+uuid: c29ede30-fba0-4743-9f99-3d0cb6f21729
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.front_page
-id: node.front_page.title
+    - node.type.services_content
+id: node.services_content.title
 field_name: title
 entity_type: node
-bundle: front_page
-label: 'County Name'
+bundle: services_content
+label: 'Name of Service'
 description: ''
 required: true
 translatable: true
