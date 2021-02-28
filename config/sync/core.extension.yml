@@ -35,6 +35,7 @@ module:
   image: 0
   imce: 0
   key: 0
+  language: 0
   layout_discovery: 0
   link: 0
   mailsystem: 0
@@ -50,6 +51,8 @@ module:
   real_aes: 0
   redis: 0
   search: 0
+  search_api: 0
+  search_api_solr: 0
   shortcut: 0
   smtp: 0
   system: 0
