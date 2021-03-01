@@ -9,7 +9,7 @@ _core:
 id: mygov_theme_local_tasks
 theme: mygov_theme
 region: header
-weight: 10
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

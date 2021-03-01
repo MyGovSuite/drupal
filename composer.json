@@ -29,6 +29,8 @@
         "drupal/imce": "^2.3",
         "drupal/pathauto": "^1.8",
         "drupal/redis": "^1.4",
+        "drupal/search_api": "^1.19",
+        "drupal/search_api_solr": "^4.1",
         "drupal/token": "^1.9",
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^5.24",
