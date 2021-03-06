@@ -38,7 +38,7 @@ function mygov_webform_site_registration_theme() {
  * Implements hook_webform_submission_form_alter().
  */
 function mygov_webform_site_registration_webform_submission_form_alter(array &$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  if ($form_id === 'webform_submission_site_registration_add_form') {
+  if (strpos($form_id, 'site_registration')) {
     $site_name = $form['elements']['site_name']['#default_value'];
     $county_id = $form['elements']['county_name']['#default_value'];
   }
