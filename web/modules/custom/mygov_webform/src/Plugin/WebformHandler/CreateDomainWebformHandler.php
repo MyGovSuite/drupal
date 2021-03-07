@@ -28,6 +28,9 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
   public function postSave(WebformSubmissionInterface $webform_submission, $update = TRUE) {
     // Get an array of the values from the submission.
     $values = $webform_submission->getData();
+
+    // Get the user who submitted the form.
+    $current_user = \Drupal::currentUser()->id();
   }
 }
 
