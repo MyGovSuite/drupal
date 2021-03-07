@@ -36,8 +36,17 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
     $ancestors = \Drupal::service('entity_type.manager')->getStorage("taxonomy_term")->loadAllParents($values['county_name']);
     $list = [];
     foreach ($ancestors as $term) {
-      $list[$term->id()] = $term->label();
+      if ($term->id() === $values['county_name']) {
+        $list['county'] = $term->label();
+      }
+      else {
+        $list['state'] = $term->label();
+      }
     }
+
+    $hostname = $list['state'] . '.' . $list['county'] . '.' . 'mygovcms.com';
+    $hostname = str_replace(' ', '_', $hostname);
+
   }
 }
 
