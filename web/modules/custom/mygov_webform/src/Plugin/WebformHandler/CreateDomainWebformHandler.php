@@ -31,6 +31,13 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
 
     // Get the user who submitted the form.
     $current_user = \Drupal::currentUser()->id();
+
+    // Load parents of taxonomy term.
+    $ancestors = \Drupal::service('entity_type.manager')->getStorage("taxonomy_term")->loadAllParents($values['county_name']);
+    $list = [];
+    foreach ($ancestors as $term) {
+      $list[$term->id()] = $term->label();
+    }
   }
 }
 
