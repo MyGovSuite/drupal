@@ -1,0 +1,5 @@
+name: 'MyGov Webform'
+type: module
+description: 'Adds functionality to register new Domain sites based on county.'
+core: 8.x
+package: 'Custom'
