@@ -1,7 +1,0 @@
-name: 'mygov_webform_site_registration'
-type: module
-description: 'MyGov Webform Site Registration'
-core: 8.x
-package: 'MyGov'
-dependencies:
-  - webform
