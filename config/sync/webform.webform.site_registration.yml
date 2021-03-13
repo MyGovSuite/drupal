@@ -3,6 +3,7 @@ langcode: en
 status: open
 dependencies:
   module:
+    - mygov_webform
     - webform_encrypt
 third_party_settings:
   webform_encrypt:
@@ -204,5 +205,14 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  create_a_domain:
+    id: 'Create a domain'
+    label: 'Create a domain'
+    notes: ''
+    handler_id: create_a_domain
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }
