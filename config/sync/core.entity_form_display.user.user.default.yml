@@ -22,6 +22,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_first_name:
     weight: 0
     settings:
@@ -40,7 +46,6 @@ content:
     region: content
 hidden:
   contact: true
-  field_domain_access: true
   field_domain_admin: true
   field_domain_all_affiliates: true
   langcode: true
