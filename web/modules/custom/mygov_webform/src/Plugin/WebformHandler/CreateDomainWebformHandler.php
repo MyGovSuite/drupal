@@ -55,18 +55,29 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
     $records_count = $domain_storage->getQuery()->count()->execute();
     $start_weight = $records_count + 1;
     $hostname = mb_strtolower($domain_name);
-    $values = [
-      'hostname' => $hostname,
-      'name' => $list['state'] . ' - ' . $values['site_name'],
-      'status' => 1,
-      'scheme' => 'http',
-      'weight' => $start_weight + 1,
-      'is_default' => 0,
-      'id' => $domain_storage->createMachineName($hostname),
-      'validate_url' => 0,
-    ];
-    $domain = $domain_storage->create($values);
-    $domain->save();
+
+    // Validate if the same hostname exists.
+    $existing =  $domain_storage->loadByProperties(['hostname' => $hostname]);
+    $existing = reset($existing);
+
+    if ($existing) {
+      $messenger = \Drupal::messenger();
+      $messenger->addError('The hostname is already registered.', $messenger::TYPE_ERROR);
+    }
+    else {
+      $values = [
+        'hostname' => $hostname,
+        'name' => $list['state'] . ' - ' . $values['site_name'],
+        'status' => 1,
+        'scheme' => 'http',
+        'weight' => $start_weight + 1,
+        'is_default' => 0,
+        'id' => $domain_storage->createMachineName($hostname),
+        'validate_url' => 0,
+      ];
+      $domain = $domain_storage->create($values);
+      $domain->save();
+    }
   }
 }
 
