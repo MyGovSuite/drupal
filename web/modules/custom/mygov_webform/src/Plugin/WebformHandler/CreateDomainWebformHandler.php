@@ -44,8 +44,9 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
       }
     }
 
-    $hostname = $list['state'] . '.' . $list['county'] . '.' . 'mygovcms.com';
-    $hostname = str_replace(' ', '_', $hostname);
+    $host = \Drupal::request()->getHost();
+    $domain_name = $list['state'] . '.' . $list['county'] . '.' . $host;
+    $domain_name = str_replace(' ', '_', $domain_name);
 
   }
 }
