@@ -48,6 +48,23 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
     $domain_name = $list['state'] . '.' . $list['county'] . '.' . $host;
     $domain_name = str_replace(' ', '_', $domain_name);
 
+    /** @var \Drupal\domain\DomainStorageInterface $domain_storage */
+    $domain_storage = \Drupal::entityTypeManager()->getStorage('domain');
+    $records_count = $domain_storage->getQuery()->count()->execute();
+    $start_weight = $records_count + 1;
+    $hostname = mb_strtolower($domain_name);
+    $values = [
+      'hostname' => $hostname,
+      'name' => $list['state'] . ' - ' . $values['site_name'],
+      'status' => 1,
+      'scheme' => 'http',
+      'weight' => $start_weight + 1,
+      'is_default' => 0,
+      'id' => $domain_storage->createMachineName($hostname),
+      'validate_url' => 0,
+    ];
+    $domain = $domain_storage->create($values);
+    $domain->save();
   }
 }
 
