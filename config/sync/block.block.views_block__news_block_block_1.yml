@@ -1,11 +1,10 @@
-uuid: 6ef73bbb-6a02-4a19-bcbe-269b057f572d
+uuid: 6e660394-c9ca-4621-867a-3d0d7b40dacf
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.news_block
   module:
-    - domain
     - system
     - views
   theme:
@@ -22,13 +21,8 @@ settings:
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: '2'
+  items_per_page: none
 visibility:
-  domain:
-    id: domain
-    domains: {  }
-    negate: null
-    context_mapping: {  }
   request_path:
     id: request_path
     pages: '<front>'

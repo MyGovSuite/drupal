@@ -1,11 +1,10 @@
-uuid: e1f443dd-e902-476d-9a37-3f7662aac5e3
+uuid: 05440c21-68f4-4c71-818a-e4f0d37b8b75
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.front_page_events
   module:
-    - domain
     - system
     - views
   theme:
@@ -24,11 +23,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  domain:
-    id: domain
-    domains: {  }
-    negate: null
-    context_mapping: {  }
   request_path:
     id: request_path
     pages: '<front>'

@@ -12,7 +12,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://MyGovLogo.png'
+  path: 'public://MyGov_Logo_0.png'
   url: ''
   use_default: false
 table_responsive: '-1'

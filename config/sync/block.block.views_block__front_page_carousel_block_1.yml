@@ -1,11 +1,10 @@
-uuid: 74ff8bd3-c2c7-44b9-ad68-62c8db5950ac
+uuid: 8a4558ce-3c89-4a7d-98e0-ab6d1daeef49
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.front_page_carousel
   module:
-    - domain
     - system
     - views
   theme:
@@ -24,11 +23,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  domain:
-    id: domain
-    domains: {  }
-    negate: null
-    context_mapping: {  }
   request_path:
     id: request_path
     pages: '<front>'
