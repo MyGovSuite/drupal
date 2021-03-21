@@ -29,16 +29,25 @@
         "drupal/field_formatter_class": "^1.5",
         "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.3",
+        "drupal/mailsystem": "^4.3",
         "drupal/owlcarousel": "^1.0@alpha",
         "drupal/pathauto": "^1.8",
+        "drupal/real_aes": "^2.3",
         "drupal/redis": "^1.4",
         "drupal/search_api": "^1.19",
         "drupal/search_api_solr": "^4.1",
+        "drupal/smtp": "^1.0",
+        "drupal/taxonomy_import": "^2.0@alpha",
         "drupal/token": "^1.9",
         "drupal/typed_data": "^1.0@alpha",
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^5.24",
+        "drupal/webform_encrypt": "^1.0@alpha",
         "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+        "drupal/console": "~1.0",
+        "drupal/console-extend-plugin": "^0.9.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -55,6 +64,9 @@
     },
     "extra": {
         "drupal-scaffold": {
+            "file-mapping": {
+                "[web-root]/sites/development.services.yml": false
+            },
             "locations": {
                 "web-root": "web/"
             }

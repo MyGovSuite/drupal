@@ -6,10 +6,9 @@ dependencies:
     - field.field.user.user.field_domain_access
     - field.field.user.user.field_domain_admin
     - field.field.user.user.field_domain_all_affiliates
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
   module:
-    - image
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -19,43 +18,36 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 2
     region: content
-  contact:
-    weight: 5
-    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_domain_access:
     type: options_buttons
-    weight: 40
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_domain_admin:
-    type: options_buttons
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_domain_all_affiliates:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 41
-    third_party_settings: {  }
-    region: content
-  language:
+  field_first_name:
     weight: 0
-    region: content
-  timezone:
-    weight: 6
-    region: content
-  user_picture:
-    type: image_image
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    weight: -1
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
+  contact: true
+  field_domain_admin: true
+  field_domain_all_affiliates: true
   langcode: true
+  language: true
+  timezone: true

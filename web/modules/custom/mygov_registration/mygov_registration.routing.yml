@@ -1,7 +1,0 @@
-mygov_registration:
-  path: '/admin/config/system/mygov_registration_settings'
-  defaults:
-    _form: '\Drupal\mygov_registration\Form\MyGovRegistrationSettingsForm'
-    _title: 'MyGov Registration Settings'
-  requirements:
-    _permission: 'access mygov settings'

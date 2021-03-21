@@ -1,0 +1,13 @@
+uuid: b0263b63-0924-4021-8725-595b62330b64
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.site_registration_key
+  module:
+    - real_aes
+id: mygov_encryption_profile
+label: 'MyGov encryption profile'
+encryption_method: real_aes
+encryption_key: site_registration_key
+encryption_method_configuration: {  }
