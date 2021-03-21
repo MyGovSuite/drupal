@@ -61,6 +61,7 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
     $existing =  $domain_storage->loadByProperties(['hostname' => $hostname]);
     $existing = reset($existing);
 
+    // Add domain if not exists.
     if ($existing) {
       $messenger = \Drupal::messenger();
       $messenger->addError('The hostname is already registered.', $messenger::TYPE_ERROR);
@@ -81,7 +82,7 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
 
       $user_entity = \Drupal\user\Entity\User::load($current_user);
 
-      // Add domain access for new site.
+      // Add domain access to current user for new site.
       if ($user_entity !== false) {
         $id = $domain->id();
         $user_domains = \Drupal::service('domain_access.manager')->getAccessValues($user_entity);
