@@ -80,10 +80,10 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
       $domain = $domain_storage->create($values);
       $domain->save();
 
-      $user_entity = \Drupal\user\Entity\User::load($current_user);
-
       // Add domain access to current user for new site.
-      if ($user_entity !== false) {
+      // Skip for administrator.
+      if ($current_user !== '1') {
+        $user_entity = \Drupal\user\Entity\User::load($current_user);
         $id = $domain->id();
         $user_domains = \Drupal::service('domain_access.manager')->getAccessValues($user_entity);
         $user_domains[$id] = $id;
