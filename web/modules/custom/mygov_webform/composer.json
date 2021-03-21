@@ -1,0 +1,13 @@
+{
+    "name": "mygov_webform",
+    "type": "drupal-module",
+    "description": "Adds functionality to register new Domain sites based on county.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/mygov_webform",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/mygov_webform",
+        "source": "http://cgit.drupalcode.org/mygov_webform",
+    },
+}

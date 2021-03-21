@@ -24,6 +24,7 @@ module:
   domain_source: 0
   dynamic_page_cache: 0
   editor: 0
+  encrypt: 0
   field: 0
   field_ui: 0
   file: 0
@@ -33,11 +34,14 @@ module:
   honeypot: 0
   image: 0
   imce: 0
+  key: 0
   language: 0
   layout_discovery: 0
   link: 0
+  mailsystem: 0
   menu_link_content: 0
   menu_ui: 0
+  mygov_webform: 0
   node: 0
   options: 0
   page_cache: 0
@@ -45,13 +49,16 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  real_aes: 0
   redis: 0
   search_api: 0
   search_api_solr: 0
   search_api_solr_admin: 0
   shortcut: 0
+  smtp: 0
   system: 0
   taxonomy: 0
+  taxonomy_import: 0
   text: 0
   token: 0
   toolbar: 0
@@ -60,6 +67,7 @@ module:
   views_bootstrap: 0
   views_ui: 0
   webform: 0
+  webform_encrypt: 0
   webform_node: 0
   webform_ui: 0
   forum: 1
