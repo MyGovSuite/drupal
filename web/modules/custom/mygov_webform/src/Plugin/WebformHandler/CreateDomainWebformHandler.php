@@ -2,6 +2,7 @@
 
 namespace Drupal\mygov_webform\Plugin\WebformHandler;
 
+use Drupal\domain_access\DomainAccessManagerInterface;
 use Drupal\webform\Plugin\WebformHandlerBase;
 use Drupal\webform\WebformSubmissionInterface;
 
@@ -77,6 +78,17 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
       ];
       $domain = $domain_storage->create($values);
       $domain->save();
+
+      $user_entity = \Drupal\user\Entity\User::load($current_user);
+
+      // Add domain access for new site.
+      if ($user_entity !== false) {
+        $id = $domain->id();
+        $user_domains = \Drupal::service('domain_access.manager')->getAccessValues($user_entity);
+        $user_domains[$id] = $id;
+        $user_entity->set(DomainAccessManagerInterface::DOMAIN_ACCESS_FIELD, array_keys($user_domains));
+        $user_entity->save();
+      }
     }
   }
 }
