@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
     - node.type.front_page_carousel
   module:
     - node
@@ -58,7 +57,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: full
+          view_mode: default
       fields:
         title:
           id: title
@@ -187,6 +186,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
