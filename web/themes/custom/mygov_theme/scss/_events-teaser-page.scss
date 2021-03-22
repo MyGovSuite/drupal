@@ -1,0 +1,39 @@
+div {
+
+
+    /* Events Teaser Page */
+
+    .view-id-events {
+        img {
+            margin-left: auto;
+            margin-right:auto;
+            width:100%;
+            margin-bottom:8%;
+            max-width:75%;
+        }
+        .events-col {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+         .events-title {
+            width: 60%;
+            float:right;
+            margin-left: auto;
+            text-align:left;
+         }
+    
+         .events-body {
+            width: 60%;
+            float:right;
+            margin-left: auto;
+            text-align: left;
+         }
+    
+         .events-img {
+            width: 40%;
+            float:left;
+            margin-right: auto
+        }
+    }
+}

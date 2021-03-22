@@ -1,0 +1,28 @@
+div {
+    /* Officials Page */
+
+    .officials {
+        width: 100%;
+        overflow: hidden;
+
+        .official-img {
+            width: 20%;
+            float:left;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .official-position-held {
+            width: 75%;
+            margin-bottom: 20px;
+        }
+
+        .official-description {
+            width : 75%;
+            float: left;
+        
+        }
+
+
+    }
+}
