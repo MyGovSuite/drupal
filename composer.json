@@ -25,7 +25,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/domain": "^1.0@beta",
-        "drupal/exclude_node_title": "^1.1",
+        "drupal/exclude_node_title": "^1.2",
         "drupal/field_formatter_class": "^1.5",
         "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.3",
