@@ -58,12 +58,16 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: views_bootstrap_list_group
+        type: views_bootstrap_grid
         options:
           row_class: ''
           default_row_class: true
           uses_fields: false
-          title_field: ''
+          col_xs: none
+          col_sm: none
+          col_md: none
+          col_lg: none
+          col_xl: none
       row:
         type: 'entity:node'
         options:
