@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_author
     - field.field.node.news.field_domain_access
     - field.field.node.news.field_domain_all_affiliates
     - field.field.node.news.field_domain_source
@@ -35,6 +36,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_author:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_domain_access:
     type: options_buttons
     weight: 40

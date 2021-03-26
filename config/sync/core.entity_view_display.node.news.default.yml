@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_author
     - field.field.node.news.field_domain_access
     - field.field.node.news.field_domain_all_affiliates
     - field.field.node.news.field_domain_source
@@ -23,9 +24,18 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 102
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_author:
+    weight: 101
+    label: inline
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: news-author
+    type: text_default
     region: content
   field_image:
     type: image
@@ -39,7 +49,7 @@ content:
       field_formatter_class:
         class: news-img
   links:
-    weight: 102
+    weight: 103
     region: content
     settings: {  }
     third_party_settings: {  }

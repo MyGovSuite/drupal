@@ -1,0 +1,21 @@
+uuid: 91ed3712-8e38-4e06-b404-4ca21da51183
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.news
+  module:
+    - text
+id: node.news.field_author
+field_name: field_author
+entity_type: node
+bundle: news
+label: 'Written By'
+description: 'Instert Author''s Name'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
