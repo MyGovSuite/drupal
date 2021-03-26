@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:front_page_carousel-block_1'
 settings:
   id: 'views_block:front_page_carousel-block_1'
-  label: ''
+  label: ' '
   provider: views
   label_display: '0'
-  views_label: ''
+  views_label: ' '
   items_per_page: none
 visibility:
   request_path:
