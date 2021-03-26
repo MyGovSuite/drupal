@@ -6,11 +6,6 @@ favicon:
   path: ''
   url: 'http://mygovcms.com/themes/custom/mygov_theme/favicon.ico'
   use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: 'public://MyGov_Logo_0.png'
   url: ''
@@ -23,3 +18,9 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+navbar_position: fixed-top
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
