@@ -22,6 +22,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
+      DOCKERHUB_REPO_NAME: mygov
       IMAGE_NAME: drupal-php
       VERSION: 7.4
 
@@ -33,7 +34,7 @@ jobs:
 
       - name: Push image
         run: |
-          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
+          IMAGE_ID=docker.pkg.github.com/$DOCKERHUB_REPO_NAME/$IMAGE_NAME
 
           # Change all uppercase to lowercase
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
