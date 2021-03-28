@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.events.field_domain_access
     - field.field.node.events.field_domain_all_affiliates
     - field.field.node.events.field_domain_source
+    - field.field.node.events.field_event_date
     - field.field.node.events.field_image
     - image.style.large
     - node.type.events
   module:
+    - datetime
     - field_formatter_class
     - image
     - text
@@ -28,6 +30,17 @@ content:
     third_party_settings:
       field_formatter_class:
         class: event-body
+    region: content
+  field_event_date:
+    weight: 109
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: datetime_default
     region: content
   field_image:
     weight: 100
