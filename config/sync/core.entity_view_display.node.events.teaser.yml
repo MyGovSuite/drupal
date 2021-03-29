@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.events.field_domain_access
     - field.field.node.events.field_domain_all_affiliates
     - field.field.node.events.field_domain_source
+    - field.field.node.events.field_event_date
     - field.field.node.events.field_image
     - image.style.grid_image
     - node.type.events
@@ -49,5 +50,6 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   field_domain_source: true
+  field_event_date: true
   langcode: true
   search_api_excerpt: true

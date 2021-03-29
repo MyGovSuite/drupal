@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.events.field_domain_access
     - field.field.node.events.field_domain_all_affiliates
     - field.field.node.events.field_domain_source
+    - field.field.node.events.field_event_date
     - field.field.node.events.field_image
     - image.style.thumbnail
     - node.type.events
   module:
+    - datetime
     - image
     - path
     - text
@@ -53,6 +55,12 @@ content:
     weight: 42
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_event_date:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_image:
     weight: 122
