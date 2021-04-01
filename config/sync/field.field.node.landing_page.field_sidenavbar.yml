@@ -1,0 +1,28 @@
+uuid: f67c3408-005b-48fa-836e-62d2de81ad74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidenavbar
+    - node.type.child_page
+    - node.type.landing_page
+id: node.landing_page.field_sidenavbar
+field_name: field_sidenavbar
+entity_type: node
+bundle: landing_page
+label: sidenavbar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      child_page: child_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

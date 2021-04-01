@@ -1,0 +1,36 @@
+uuid: c44b8e03-9afb-4047-aae0-d8cd07702d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.child_page.body
+    - field.field.node.child_page.field_domain_access
+    - field.field.node.child_page.field_domain_all_affiliates
+    - field.field.node.child_page.field_domain_source
+    - node.type.child_page
+  module:
+    - text
+    - user
+id: node.child_page.default
+targetEntityType: node
+bundle: child_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true
