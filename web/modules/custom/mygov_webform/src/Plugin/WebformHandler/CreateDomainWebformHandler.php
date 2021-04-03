@@ -13,7 +13,7 @@ use Drupal\webform\WebformSubmissionInterface;
  *   id = "Create a domain",
  *   label = @Translation("Create a domain"),
  *   category = @Translation("Action"),
- *   description = @Translation("Creates a new node from Webform Submissions."),
+ *   description = @Translation("Creates a new domain from Webform Submissions."),
  *   cardinality = \Drupal\webform\Plugin\WebformHandlerInterface::CARDINALITY_UNLIMITED,
  *   results = \Drupal\webform\Plugin\WebformHandlerInterface::RESULTS_PROCESSED,
  *   submission = \Drupal\webform\Plugin\WebformHandlerInterface::SUBMISSION_REQUIRED,
