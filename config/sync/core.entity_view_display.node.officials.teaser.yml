@@ -13,6 +13,7 @@ dependencies:
     - image.style.grid_image
     - node.type.officials
   module:
+    - field_formatter_class
     - image
     - text
     - user
@@ -26,8 +27,10 @@ content:
     type: text_summary_or_trimmed
     weight: 101
     settings:
-      trim_length: 50
-    third_party_settings: {  }
+      trim_length: 200
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     region: content
   field_official_image:
     type: image
@@ -37,6 +40,13 @@ content:
     settings:
       image_style: grid_image
       image_link: content
+    third_party_settings:
+      field_formatter_class:
+        class: official-teaser-img
+  links:
+    weight: 102
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   field_domain_access: true
@@ -44,5 +54,4 @@ hidden:
   field_domain_source: true
   field_position_held: true
   langcode: true
-  links: true
   search_api_excerpt: true

@@ -1,0 +1,30 @@
+uuid: b42293d6-ff1b-4079-ad4a-da4905d8b8df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front_page_carousel.field_carousel_image
+    - field.field.node.front_page_carousel.field_domain_access
+    - field.field.node.front_page_carousel.field_domain_all_affiliates
+    - field.field.node.front_page_carousel.field_domain_source
+    - node.type.front_page_carousel
+  module:
+    - user
+id: node.front_page_carousel.teaser
+targetEntityType: node
+bundle: front_page_carousel
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_carousel_image: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  langcode: true
+  search_api_excerpt: true

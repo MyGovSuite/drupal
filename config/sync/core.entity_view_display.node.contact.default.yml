@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.contact.body
+    - field.field.node.contact.field_contact_us
     - field.field.node.contact.field_domain_access
     - field.field.node.contact.field_domain_all_affiliates
     - field.field.node.contact.field_domain_source
@@ -11,6 +12,7 @@ dependencies:
   module:
     - text
     - user
+    - webform
 id: node.contact.default
 targetEntityType: node
 bundle: contact
@@ -22,6 +24,14 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_contact_us:
+    weight: 102
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
   links:
     weight: 100

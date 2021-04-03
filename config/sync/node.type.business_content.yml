@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Business Content'
 type: business_content
-description: ''
+description: 'Create content type to give visitors information about businesses in your county'
 help: ''
 new_revision: true
 preview_mode: 1

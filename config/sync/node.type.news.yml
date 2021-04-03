@@ -1,0 +1,17 @@
+uuid: 53a6b7e9-4110-4c2d-99d5-9a67ab406199
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'Create a news article about your city/county'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

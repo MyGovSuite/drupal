@@ -1,0 +1,18 @@
+uuid: fc895263-30ac-40b3-b598-f4a3606736ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Child Page'
+type: child_page
+description: 'Create a child page for your main content topic'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

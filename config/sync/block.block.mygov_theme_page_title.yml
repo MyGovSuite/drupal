@@ -16,5 +16,5 @@ settings:
   id: page_title_block
   label: 'Page title'
   provider: core
-  label_display: '0'
+  label_display: visible
 visibility: {  }

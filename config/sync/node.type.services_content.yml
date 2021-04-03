@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Services Content'
 type: services_content
-description: ''
+description: 'Create a page informing visitors about your city services'
 help: ''
 new_revision: true
 preview_mode: 1

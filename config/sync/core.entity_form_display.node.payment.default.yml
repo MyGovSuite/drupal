@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.payment.field_domain_access
     - field.field.node.payment.field_domain_all_affiliates
     - field.field.node.payment.field_domain_source
+    - field.field.node.payment.field_payment
     - node.type.payment
   module:
     - path
     - text
+    - webform
 id: node.payment.default
 targetEntityType: node
 bundle: payment
@@ -50,6 +52,14 @@ content:
     weight: 42
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_payment:
+    weight: 122
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
     region: content
   langcode:
     type: language_select

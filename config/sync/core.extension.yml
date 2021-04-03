@@ -25,7 +25,9 @@ module:
   dynamic_page_cache: 0
   editor: 0
   encrypt: 0
+  exclude_node_title: 0
   field: 0
+  field_formatter_class: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -44,6 +46,7 @@ module:
   mygov_webform: 0
   node: 0
   options: 0
+  owlcarousel: 0
   page_cache: 0
   path: 0
   path_alias: 0
@@ -63,6 +66,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
   user: 0
   views_bootstrap: 0
   views_ui: 0

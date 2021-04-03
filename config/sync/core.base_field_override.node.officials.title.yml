@@ -1,0 +1,18 @@
+uuid: 0c9587aa-a3e7-4c31-a9fa-3143796806a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.officials
+id: node.officials.title
+field_name: title
+entity_type: node
+bundle: officials
+label: 'Official''s Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

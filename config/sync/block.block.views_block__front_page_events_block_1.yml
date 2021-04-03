@@ -1,0 +1,30 @@
+uuid: 05440c21-68f4-4c71-818a-e4f0d37b8b75
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_page_events
+  module:
+    - system
+    - views
+  theme:
+    - mygov_theme
+id: views_block__front_page_events_block_1
+theme: mygov_theme
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:front_page_events-block_1'
+settings:
+  id: 'views_block:front_page_events-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

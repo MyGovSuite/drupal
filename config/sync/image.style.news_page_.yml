@@ -1,0 +1,15 @@
+uuid: b5ebc077-f858-409f-a4e0-b253a6f3e2b7
+langcode: en
+status: true
+dependencies: {  }
+name: news_page_
+label: 'News Page 350x225'
+effects:
+  8d297a24-e329-4fce-91af-32b85bb162ee:
+    uuid: 8d297a24-e329-4fce-91af-32b85bb162ee
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 225
+      anchor: center-center

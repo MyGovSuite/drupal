@@ -1,6 +1,6 @@
 settings:
   default_status: open
-  default_page_base_path: form
+  default_page_base_path: /form
   default_ajax: false
   default_ajax_effect: fade
   default_ajax_speed: 500
@@ -17,6 +17,7 @@ settings:
   default_form_disable_back: false
   default_form_submit_back: false
   default_form_unsaved: false
+  default_form_disable_remote_addr: false
   default_form_novalidate: false
   default_form_disable_inline_errors: false
   default_form_required: false
@@ -211,4 +212,4 @@ third_party_settings:
   captcha:
     replace_administration_mode: true
 _core:
-  default_config_hash: Ec4va_HZl3RMttAflc8Oh7hFjwddLh1Jo4yTR9e80FE
+  default_config_hash: oC7TYXEhOXalMR0QEAF8lrN1cWHT28dAlJa6S0sZ_KQ

@@ -1,0 +1,56 @@
+nid_list: {  }
+translation_sync: true
+search: false
+_core:
+  default_config_hash: avgYHPM-altr_AzKnQXTMVOX45XPWncreZepSjW8m7c
+content_types:
+  about: none
+  about_us: none
+  article: none
+  blog: none
+  business: none
+  business_content: none
+  contact: none
+  form: none
+  forum: none
+  front_page: none
+  front_page_carousel: all
+  government: none
+  government_content: none
+  officials: none
+  page: none
+  payment: none
+  services: none
+  services_content: none
+  events: all
+  news: none
+content_type_modes:
+  about: {  }
+  about_us: {  }
+  article: {  }
+  blog: {  }
+  business: {  }
+  business_content: {  }
+  contact: {  }
+  form: {  }
+  forum: {  }
+  front_page: {  }
+  front_page_carousel:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  government: {  }
+  government_content: {  }
+  officials: {  }
+  page: {  }
+  payment: {  }
+  services: {  }
+  services_content: {  }
+  events:
+    - teaser
+  news: {  }
+type: null
