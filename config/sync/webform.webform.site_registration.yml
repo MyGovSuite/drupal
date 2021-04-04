@@ -215,4 +215,13 @@ handlers:
     conditions: {  }
     weight: 0
     settings: {  }
+  create_a_front_page:
+    id: 'Create a Front Page'
+    label: 'Create a Front Page'
+    notes: ''
+    handler_id: create_a_front_page
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }
