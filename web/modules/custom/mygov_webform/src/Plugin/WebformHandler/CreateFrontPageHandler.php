@@ -2,7 +2,6 @@
 
 namespace Drupal\mygov_webform\Plugin\WebformHandler;
 
-use Drupal\Core\Entity\Entity;
 use Drupal\node\Entity\Node;
 use Drupal\webform\Plugin\WebformHandlerBase;
 use Drupal\webform\WebformSubmissionInterface;
