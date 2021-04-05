@@ -104,6 +104,16 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
       ));
 
       $front_page->save();
+
+      // Create a configuration to set the Front Page as the new domain.
+      $domain_config = \Drupal::service('config.factory')->getEditable('domain.config.' . $values['hostname'] . '.system.site')->setData(array(
+        'name' => $values['name'],
+        'page' => array(
+          'front' => $front_page->id(),
+        ),
+      ));
+
+      $domain_config->save();
     }
   }
 }
