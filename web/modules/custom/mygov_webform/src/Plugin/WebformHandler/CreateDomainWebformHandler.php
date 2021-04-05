@@ -3,6 +3,8 @@
 namespace Drupal\mygov_webform\Plugin\WebformHandler;
 
 use Drupal\domain_access\DomainAccessManagerInterface;
+use Drupal\node\Entity\Node;
+use Drupal\webform\Annotation\WebformHandler;
 use Drupal\webform\Plugin\WebformHandlerBase;
 use Drupal\webform\WebformSubmissionInterface;
 
@@ -23,6 +25,7 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
 
   /**
    * {@inheritdoc}
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
 
   // Function to be fired after submitting the Webform.
@@ -90,6 +93,17 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
         $user_entity->set(DomainAccessManagerInterface::DOMAIN_ACCESS_FIELD, array_keys($user_domains));
         $user_entity->save();
       }
+
+      // Creates a new Front Page node.
+      $front_page = Node::create(array(
+        'type' => 'front_page',
+        'title' => $values['name'],
+        'langcode' => 'en',
+        'uid' => $current_user,
+        'status' => 1,
+      ));
+
+      $front_page->save();
     }
   }
 }
