@@ -1,0 +1,21 @@
+uuid: fc343892-e854-49b6-b9c7-7ff143be0f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline
+    - node.type.mygov_landing
+  module:
+    - text
+id: node.mygov_landing.field_headline
+field_name: field_headline
+entity_type: node
+bundle: mygov_landing
+label: headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,44 @@
+uuid: 9a9a98be-2e7a-4819-ac7b-37833e80b9b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mygov_landing.field_calltoaction
+    - field.field.node.mygov_landing.field_companyimage
+    - field.field.node.mygov_landing.field_companyimage2
+    - field.field.node.mygov_landing.field_companyinfo
+    - field.field.node.mygov_landing.field_companyinfo2
+    - field.field.node.mygov_landing.field_ctaimage
+    - field.field.node.mygov_landing.field_domain_access
+    - field.field.node.mygov_landing.field_domain_all_affiliates
+    - field.field.node.mygov_landing.field_domain_source
+    - field.field.node.mygov_landing.field_headline
+    - field.field.node.mygov_landing.field_title
+    - node.type.mygov_landing
+  module:
+    - user
+id: node.mygov_landing.teaser
+targetEntityType: node
+bundle: mygov_landing
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_calltoaction: true
+  field_companyimage: true
+  field_companyimage2: true
+  field_companyinfo: true
+  field_companyinfo2: true
+  field_ctaimage: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_headline: true
+  field_title: true
+  langcode: true
+  search_api_excerpt: true

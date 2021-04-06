@@ -1,0 +1,11 @@
+uuid: 06366a3f-b17e-4ec4-858d-7ffe1af7f7a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mygov_landing
+id: node.mygov_landing
+target_entity_type_id: node
+target_bundle: mygov_landing
+default_langcode: site_default
+language_alterable: false

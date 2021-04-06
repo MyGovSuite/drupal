@@ -1,0 +1,38 @@
+uuid: 3c7d08f1-dfdf-4546-9252-72e001af597a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_companyimage2
+    - node.type.mygov_landing
+  module:
+    - image
+id: node.mygov_landing.field_companyimage2
+field_name: field_companyimage2
+entity_type: node
+bundle: mygov_landing
+label: companyimage2
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

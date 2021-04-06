@@ -1,0 +1,19 @@
+uuid: 058534a5-ea33-478c-896c-db70cf4c86c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_calltoaction
+field_name: field_calltoaction
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

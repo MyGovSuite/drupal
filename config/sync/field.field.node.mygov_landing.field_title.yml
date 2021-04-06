@@ -1,0 +1,19 @@
+uuid: f41bc94d-405b-4d1a-8f4a-55b95a86f51b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.mygov_landing
+id: node.mygov_landing.field_title
+field_name: field_title
+entity_type: node
+bundle: mygov_landing
+label: 'Company Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

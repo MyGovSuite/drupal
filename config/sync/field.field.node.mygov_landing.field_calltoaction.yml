@@ -1,0 +1,21 @@
+uuid: ea94d84c-0e60-4763-8122-b41af2945ccc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calltoaction
+    - node.type.mygov_landing
+  module:
+    - text
+id: node.mygov_landing.field_calltoaction
+field_name: field_calltoaction
+entity_type: node
+bundle: mygov_landing
+label: calltoaction
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 850d237c-832f-4325-9db4-d9c991010a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_companyinfo2
+    - node.type.mygov_landing
+  module:
+    - text
+id: node.mygov_landing.field_companyinfo2
+field_name: field_companyinfo2
+entity_type: node
+bundle: mygov_landing
+label: companyinfo2
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
