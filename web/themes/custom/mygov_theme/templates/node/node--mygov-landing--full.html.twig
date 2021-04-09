@@ -106,35 +106,57 @@
             
             <div class = "cta-summary">
                 {{ content.field_calltoaction }} 
+                <div class = 'cta-buttons'>
+                <button type="button" class="btn btn-dark btn-lg download-button"> Register</button>
+                <button type="button" class="btn btn-dark btn-lg download-button"> Login</button>
+                </div>
+               
             </div>
         </div>
 
         <div class = "call-to-action-img">
-        {{ content.field_ctaimage }} 
+          <div class = "ctaimg1">
+            {{ content.field_ctaimage }}
+          </div>
+
+          <div class = "ctaimg2">
+            {{ content.field_ctaimg2 }} 
+          </div>
+
         </div>
+
             
     </div>
 
  
     <div class = "mygov-info">    
-        <div class = "info1">
-            {{ content.field_companyinfo }} 
-        </div>
 
         <div class = "info1-img">
             {{ content.field_companyimage }} 
         </div>
 
-        <div class = "info2">
-            {{ content.field_companyinfo2 }} 
+        <div class = "info1">
+           {{ content.field_companyinfo }}
         </div>
-        
+
         <div class = "info-img2">
 
         {{ content.field_companyimage2 }}
 
         </div>
 
+        <div class = "info2">
+            {{ content.field_companyinfo2 }} 
+        </div>    
     </div>
+
+          <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+  </div>
 
 </article>
