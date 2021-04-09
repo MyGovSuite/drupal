@@ -13,9 +13,6 @@ if [ "$( docker container inspect -f '{{.State.Running}}' 'mygov_php' )" == "tru
   printf "Synchronize configuration \n\n"
   docker exec "$(docker ps -a --filter name='mygov_php' --format "{{ .ID }}")" drush config:import -y
 
-  printf "\nRestore development.services.yml from drupal-scaffold \n\n"
-  git checkout -- web/sites/development.services.yml
-
   printf "Clear caches \n\n"
   docker exec "$(docker ps -a --filter name='mygov_php' --format "{{ .ID }}")" drush cache-rebuild -y
 
