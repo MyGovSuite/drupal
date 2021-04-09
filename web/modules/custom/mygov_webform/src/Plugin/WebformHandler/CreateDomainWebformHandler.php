@@ -2,6 +2,9 @@
 
 namespace Drupal\mygov_webform\Plugin\WebformHandler;
 
+use Drupal\Core\Link;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\Url;
 use Drupal\domain_access\DomainAccessManagerInterface;
 use Drupal\node\Entity\Node;
 use Drupal\webform\Annotation\WebformHandler;
@@ -113,7 +116,10 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
 
       $domain_config->save();
 
-      $messenger->addMessage('Your site has been created!', $messenger::TYPE_STATUS);
+      $url = Url::fromUri('http://' . $hostname);
+      $link = Link::fromTextAndUrl($values['name'], $url)->toString();
+      $text = new TranslatableMarkup("Your site has been created! Visit the page here - @link", ["@link" => $link]);
+      $messenger->addMessage($text, $messenger::TYPE_STATUS);
     }
   }
 }
