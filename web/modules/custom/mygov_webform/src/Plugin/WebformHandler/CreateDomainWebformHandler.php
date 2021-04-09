@@ -51,8 +51,6 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
     $host = \Drupal::request()->getHost();
     $domain_name = $list['state'] . '.' . $list['county'] . '.' . $host;
     $domain_name = str_replace(' ', '-', $domain_name);
-    // Remove repetitive county term imported from csv.
-    $domain_name = str_ireplace('_county', '', $domain_name);
 
     /** @var \Drupal\domain\DomainStorageInterface $domain_storage */
     $domain_storage = \Drupal::entityTypeManager()->getStorage('domain');
