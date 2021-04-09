@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - search_api.index.main_index
-    - system.menu.main
   module:
     - search_api
 id: site_search
@@ -236,8 +235,13 @@ display:
       display_extenders: {  }
       path: site-search
       menu:
-        type: normal
+        type: none
         title: 'Site search'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
         menu_name: main
       exposed_block: true
     cache_metadata:
