@@ -1,0 +1,52 @@
+.call-to-action {
+    display: flex;
+    margin-bottom: 100px;
+    padding:120px
+}
+
+.cta-text {
+    float: left;
+    flex: 60%;
+    width: 100%;
+    overflow: auto;
+
+}
+
+
+.call-to-action-img {
+    float: right;
+    width: 60%;
+    right: 30%;
+    padding: 20px;
+
+}
+
+
+.call-to-action-img img{
+    width:60%;
+}
+.ctaimg1 {
+    float: right;
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+.ctaimg2 {
+    position: absolute;
+    top: 44%;    
+    left: 65%;    
+    transform: translate(-54%, -44%);
+}
+
+.cta-button {
+    margin:15px;
+
+}
+
+.mygov-info {
+    background-color: #f8f8f8;
+    display: flex;
+    padding: 20px
+}
+ 
