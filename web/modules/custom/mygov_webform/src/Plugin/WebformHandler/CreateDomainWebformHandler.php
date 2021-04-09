@@ -65,8 +65,8 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
     $existing = reset($existing);
 
     // Add domain if not exists.
+    $messenger = \Drupal::messenger();
     if ($existing) {
-      $messenger = \Drupal::messenger();
       $messenger->addError('The hostname is already registered.', $messenger::TYPE_ERROR);
     }
     else {
@@ -114,6 +114,8 @@ class CreateDomainWebformHandler extends WebformHandlerBase {
       ));
 
       $domain_config->save();
+
+      $messenger->addMessage('Your site has been created!', $messenger::TYPE_STATUS);
     }
   }
 }
