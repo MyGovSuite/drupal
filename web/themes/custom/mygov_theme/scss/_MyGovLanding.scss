@@ -1,7 +1,8 @@
 .call-to-action {
     display: flex;
     margin-bottom: 100px;
-    padding:120px
+    padding-bottom:50px;
+    padding-left:50px;
 }
 
 .cta-text {
@@ -29,14 +30,14 @@
     float: right;
     position: relative;
     top: 0;
-    left: 0px;
+    left: 115px;
 }
 
 .ctaimg2 {
     position: absolute;
-    top: 44%;    
+    top: 37%;    
     left: 65%;    
-    transform: translate(-54%, -44%);
+    transform: translate(-39%, -44%);
 }
 
 .cta-button {
