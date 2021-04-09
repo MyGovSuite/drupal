@@ -7,7 +7,8 @@ fonts:
   css:
     theme:
       'https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap': { type: external, minified: true } 
-      'https://use.fontawesome.com/releases/v5.0.7/js/all.js': { type: external, minified: true }
+    component:
+      //use.cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css: {}
 
 # Uncomment for LESS source JavaScript files.
 #  js:
