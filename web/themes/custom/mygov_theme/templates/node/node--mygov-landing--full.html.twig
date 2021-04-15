@@ -95,44 +95,48 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    <div class = "call-to-action">
-        <div class = "cta-text">
-            <div class = "headline">
-                <h3{{ content.field_headline }}
-
-                </h3>
-            </div>
-            
   <section class="white-section" id="cta">
+  <div class="cta-row">
 
-                <div class = "cta-summary">
-                {{ content.field_calltoaction }} 
-                <div class = 'cta-buttons'>
-                  <button type="button" class="btn btn-dark btn-lg download-button"> Register</button>
-                  <button type="button" class="btn btn-dark btn-lg download-button"> Login</button>
-                </div>
-               
+    <div{{ content_attributes.addClass('content') }}>
+      <div class = "call-to-action">
+          <div class = "cta-text">
+              <div class = "headline">
+                  <h3{{ content.field_headline }}
+
+                  </h3>
+              </div>
+              
+
+
+                  <div class = "cta-summary">
+                  {{ content.field_calltoaction }} 
+                  <div class = 'cta-buttons'>
+                    <button type="button" class="btn btn-dark btn-lg download-button"> Register</button>
+                    <button type="button" class="btn btn-dark btn-lg download-button"> Login</button>
+                  </div>
+                
+              </div>
+          </div>
+
+          <div class = "call-to-action-img">
+            <div class = "ctaimg1">
+              {{ content.field_ctaimage }}
             </div>
-        </div>
 
-        <div class = "call-to-action-img">
-          <div class = "ctaimg1">
-            {{ content.field_ctaimage }}
+            <div class = "ctaimg2">
+              {{ content.field_ctaimg2 }} 
+            </div>
+
           </div>
 
-          <div class = "ctaimg2">
-            {{ content.field_ctaimg2 }} 
-          </div>
-
-        </div>
-
-            
+              
+      </div>
     </div>
   </section>
 
 
- <section class="colored-section" id="mygov-info">
+ <section class="white-section" id="mygov-info">
 
     <div class = "mygov-info">    
         <div class = "info-column1">  
@@ -158,28 +162,28 @@
         </div>
             
     </div>
-    </section>
+  </section>
 
   <section class="white-section" id="features">
     <div class="features">
 
       <div class="features-row">
         <div class="feature-box col-lg-4">
-          <i class="icon fal fa-laptop-house"></i>
+          <i class="icon fas fa-laptop-house fa-4x"></i>
           <h3 class="feature-title">Easy to use.</h3>
           <p>No coding?  No problem, our simple interface allows anyone to create a website!</p>
         </div>
 
         <div class="feature-box col-lg-4">
-          <i class="icon fal fa-laptop-code"></i>
-          <h3 class="feature-title">Anytime, anywhere</h3>
-          <p>Update your website anytime, anywhere</p>
+          <i class="icon fas fa-laptop-code fa-4x"></i>
+          <h3 class="feature-title">Anytime, anywhere.</h3>
+          <p>Update your website anytime, anywhere.</p>
         </div>
 
         <div class="feature-box col-lg-4">
-          <i class="icon fas fa-heart fa-4x"></i>
-          <h3 class="feature-title">Guaranteed to work.</h3>
-          <p>Find the love of your dog's life or your money back.</p>
+          <i class="icon fas fa-mobile fa-4x"></i>
+          <h3 class="feature-title">Always be connected.</h3>
+          <p>Responsive pages allow your community to be connected at all times.</p>
         </div>
       </div>
     </div>
