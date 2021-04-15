@@ -1,3 +1,14 @@
+.colored-section {
+    background-color: #C0C0C0;
+  }
+  
+  .white-section {
+    background-color: #fff;
+  }
+  
+
+
+
 .call-to-action {
     display: flex;
     margin-bottom: 100px;
@@ -26,6 +37,7 @@
 .call-to-action-img img{
     width:60%;
 }
+
 .ctaimg1 {
     float: right;
     position: relative;
@@ -46,7 +58,6 @@
 }
 
 .mygov-info {
-    background-color: #f8f8f8;
     display: flex;
     padding: 20px
 }
@@ -68,4 +79,25 @@
     height: 50%;
     padding: 20px;
 }
- 
+
+
+#features {
+    position: relative;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color:  #343434;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #C0C0C0;
+  } 
