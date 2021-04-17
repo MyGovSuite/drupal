@@ -1,13 +1,14 @@
 ARG PHP_TAG=8.9.0-debian-10-r0
 
-FROM bitnami/drupal:$PHP_TAG
-
-COPY composer.json composer.lock /opt/bitnami/drupal
+FROM composer:2 as builder
+COPY composer.json composer.lock /app/
+WORKDIR /app
+RUN composer install --no-dev --prefer-dist --no-interaction --ignore-platform-req=php --ignore-platform-req=ext-gd
 
 USER root
 
-RUN cd /opt/bitnami/drupal && \
-    composer install --no-dev --prefer-dist --no-interaction
-
-COPY web/modules/custom/ /opt/bitnami/drupal/web/modules/custom
-COPY web/themes/custom/ /opt/bitnami/drupal/web/themes/custom
+FROM bitnami/drupal:$PHP_TAG
+RUN rm -rf /opt/bitnami/drupal/*
+COPY --from=builder /app /opt/bitnami/drupal
+COPY web/modules /bitnami/drupal/modules
+COPY web/themes /bitnami/drupal/themes
