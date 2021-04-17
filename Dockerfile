@@ -1,16 +1,13 @@
-ARG PHP_TAG=7.4
+ARG PHP_TAG=8.9.0-debian-10-r0
 
-FROM wodby/drupal-php:$PHP_TAG
+FROM bitnami/drupal:$PHP_TAG
 
-COPY composer.json composer.lock ./
+COPY composer.json composer.lock /opt/bitnami/drupal
 
 USER root
 
-RUN composer install --no-dev --prefer-dist --no-interaction
+RUN cd /opt/bitnami/drupal && \
+    composer install --no-dev --prefer-dist --no-interaction
 
-COPY web/modules/custom/ /var/www/html/web/modules/custom
-COPY web/themes/custom/ /var/www/html/web/themes/custom
-
-RUN chown -R wodby:wodby web/
-
-USER wodby
+COPY web/modules/custom/ /opt/bitnami/drupal/web/modules/custom
+COPY web/themes/custom/ /opt/bitnami/drupal/web/themes/custom
