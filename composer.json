@@ -44,6 +44,7 @@
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^5.24",
         "drupal/webform_encrypt": "^1.0@alpha",
+        "drush/drush": "^10.4",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
