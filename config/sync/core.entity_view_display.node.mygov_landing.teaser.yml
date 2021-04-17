@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.mygov_landing.field_companyinfo
     - field.field.node.mygov_landing.field_companyinfo2
     - field.field.node.mygov_landing.field_ctaimage
+    - field.field.node.mygov_landing.field_ctaimg2
     - field.field.node.mygov_landing.field_domain_access
     - field.field.node.mygov_landing.field_domain_all_affiliates
     - field.field.node.mygov_landing.field_domain_source
@@ -35,6 +36,7 @@ hidden:
   field_companyinfo: true
   field_companyinfo2: true
   field_ctaimage: true
+  field_ctaimg2: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_domain_source: true

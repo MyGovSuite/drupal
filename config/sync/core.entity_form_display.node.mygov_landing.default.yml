@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.mygov_landing.field_companyinfo
     - field.field.node.mygov_landing.field_companyinfo2
     - field.field.node.mygov_landing.field_ctaimage
+    - field.field.node.mygov_landing.field_ctaimg2
     - field.field.node.mygov_landing.field_domain_access
     - field.field.node.mygov_landing.field_domain_all_affiliates
     - field.field.node.mygov_landing.field_domain_source
@@ -40,7 +41,7 @@ content:
     type: text_textarea
     region: content
   field_companyimage:
-    weight: 125
+    weight: 151
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -48,7 +49,7 @@ content:
     type: image_image
     region: content
   field_companyimage2:
-    weight: 129
+    weight: 153
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -56,7 +57,7 @@ content:
     type: image_image
     region: content
   field_companyinfo:
-    weight: 123
+    weight: 150
     settings:
       rows: 5
       placeholder: ''
@@ -64,7 +65,7 @@ content:
     type: text_textarea
     region: content
   field_companyinfo2:
-    weight: 128
+    weight: 152
     settings:
       rows: 5
       placeholder: ''
@@ -72,7 +73,15 @@ content:
     type: text_textarea
     region: content
   field_ctaimage:
-    weight: 124
+    weight: 123
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ctaimg2:
+    weight: 123
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
