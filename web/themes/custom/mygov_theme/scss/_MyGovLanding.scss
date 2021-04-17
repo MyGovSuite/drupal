@@ -9,6 +9,16 @@
 
 /* Call to action */
 
+@media only screen and (max-width: 1026px) {
+  .ctaimg1  {
+    display: none;
+}
+
+  .ctaimg2  {
+      display: none;
+  }
+}
+
 .call-to-action {
     display: flex;
     margin-bottom: 150px;
@@ -22,6 +32,14 @@
     width: 100%;
     overflow: auto;
 
+}
+
+.register-btn {
+  margin-right: 20px;
+}
+
+.login-btn {
+  margin-left: 20px;
 }
 
 
