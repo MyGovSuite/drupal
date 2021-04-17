@@ -21,6 +21,7 @@
         "drupal/backup_migrate": "^4.1",
         "drupal/bootstrap": "^3.23",
         "drupal/bootstrap_layouts": "^5.2",
+        "drupal/bootstrap_library": "^1.14",
         "drupal/ckeditor_bootstrap_buttons": "^2.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
