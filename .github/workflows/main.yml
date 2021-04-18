@@ -29,6 +29,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Build theme
+        run: docker run -e SASS_FILE=web/themes/custom/mygov_theme/scss/style.scss -e SASS_OUTPUT_PATH=web/themes/custom/mygov_theme/css/style.css mygov/sass:1.0
+
       - name: Build image
         run: docker build . --file Dockerfile --tag $DOCKERHUB_REPO_NAME/$IMAGE_NAME:$VERSION
 
