@@ -1,17 +1,18 @@
-uuid: 168c1d4a-b392-453d-9212-1ae5b887dd7d
+uuid: a1ec9bd7-77b0-4992-9f91-3d867215a471
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.site_search
   module:
+    - domain
     - views
   theme:
     - mygov_theme
 id: exposedformsite_searchpage_1
 theme: mygov_theme
 region: navigation
-weight: 0
+weight: -5
 provider: null
 plugin: 'views_exposed_filter_block:site_search-page_1'
 settings:
@@ -20,4 +21,9 @@ settings:
   provider: views
   label_display: '0'
   views_label: ''
-visibility: {  }
+visibility:
+  domain:
+    id: domain
+    domains: {  }
+    negate: null
+    context_mapping: {  }
