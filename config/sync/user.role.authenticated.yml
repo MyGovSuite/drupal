@@ -131,4 +131,5 @@ permissions:
   - 'view page revisions'
   - 'view payment revisions'
   - 'view services_content revisions'
+  - 'view the administration theme'
   - 'view unpublished domain content'
