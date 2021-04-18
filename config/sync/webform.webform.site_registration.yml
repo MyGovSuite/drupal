@@ -27,7 +27,7 @@ id: site_registration
 title: 'Site Registration'
 description: 'Allows users to create a new MyGov site.'
 category: ''
-elements: "site_name:\n  '#type': textfield\n  '#title': 'Site Name'\n  '#required': true\ncounty_name:\n  '#type': webform_term_select\n  '#title': 'County Name'\n  '#select2': true\n  '#required': true\n  '#vocabulary': counties\n  '#breadcrumb': true\n  '#breadcrumb_delimiter': ' - '\n  '#tree_delimiter': ''\n  '#depth': 2"
+elements: "site_registration_instructions:\n  '#type': webform_message\n  '#message_message': 'Fill out your desired site name and the corresponding location by using the form fields below.'\ncounty_name:\n  '#type': webform_term_select\n  '#title': 'Where is your County Located?'\n  '#select2': true\n  '#required': true\n  '#unique': true\n  '#unique_error': 'A MyGov site for this county already exists!'\n  '#vocabulary': counties\n  '#breadcrumb': true\n  '#breadcrumb_delimiter': ' - '\n  '#tree_delimiter': ''\n  '#depth': 2\nsite_name:\n  '#type': textfield\n  '#title': 'Site Name'\n  '#required': true"
 css: ''
 javascript: ''
 settings:
