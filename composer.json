@@ -26,6 +26,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/core-vendor-hardening": "^8.8",
         "drupal/domain": "^1.0@beta",
         "drupal/exclude_node_title": "^1.2",
         "drupal/field_formatter_class": "^1.5",
@@ -47,6 +48,7 @@
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^5.24",
         "drupal/webform_encrypt": "^1.0@alpha",
+        "drush/drush": "^10.4",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
