@@ -10,8 +10,8 @@ USER root
 FROM bitnami/drupal:$PHP_TAG
 RUN rm -rf /opt/bitnami/drupal/*
 COPY --from=builder /app /opt/bitnami/drupal
-COPY web/modules /bitnami/drupal/modules
-COPY web/themes /bitnami/drupal/themes
+COPY web/modules /opt/bitnami/drupal/web/modules
+COPY web/themes /opt/bitnami/drupal/web/themes
 COPY load.environment.php /opt/bitnami/drupal/load.environment.php
 COPY docker/overrides/drupal-vhost.conf /opt/bitnami/apache/conf/vhosts/drupal-vhost.conf
 COPY docker/overrides/drupal-https-vhost.conf /opt/bitnami/apache/conf/vhosts/drupal-https-vhost.conf
