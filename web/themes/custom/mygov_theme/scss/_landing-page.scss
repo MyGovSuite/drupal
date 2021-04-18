@@ -1,33 +1,30 @@
 .landing-sidebar {
-    float: left;
-    margin-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    width: 18%;
-    background-color: #f8f8f8;
-    height: 100%;
-    overflow: auto;
+  float: left;
+  margin-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 18%;
+  background-color: #f8f8f8;
+  height: 100%;
+  overflow: auto;
 
-    a {
-        display: block;
-        color: black;
-        padding: 5px;
-        text-decoration: none;
+  a {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
 
-        &:hover { 
-            background-color: #555;
-            color: white;
-        }
-
+    &:hover {
+      background-color: #555;
+      color: white;
     }
-}
 
+  }
+}
 
 .landing-content {
-    float: right;
-    width: 80%;
-    height: 100%;
-    
-}
+  float: right;
+  width: 80%;
+  height: 100%;
 
- 
+}

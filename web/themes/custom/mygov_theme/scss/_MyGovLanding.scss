@@ -1,36 +1,35 @@
 .colored-section {
-    background-color: #f8f8f8;
-  }
-  
-  .white-section {
-    background-color: #fff;
-  }
-  
+  background-color: #f8f8f8;
+}
+
+.white-section {
+  background-color: #fff;
+}
 
 /* Call to action */
 
 @media only screen and (max-width: 1026px) {
   .ctaimg1  {
     display: none;
-}
+  }
 
   .ctaimg2  {
-      display: none;
+    display: none;
   }
 }
 
 .call-to-action {
-    display: flex;
-    margin-bottom: 150px;
-    padding-bottom:50px;
-    padding-left:50px;
+  display: flex;
+  margin-bottom: 150px;
+  padding-bottom:50px;
+  padding-left:50px;
 }
 
 .cta-text {
-    float: left;
-    flex: 60%;
-    width: 100%;
-    overflow: auto;
+  float: left;
+  flex: 60%;
+  width: 100%;
+  overflow: auto;
 
 }
 
@@ -42,37 +41,35 @@
   margin-left: 20px;
 }
 
-
 .call-to-action-img {
-    float: right;
-    width: 60%;
-    right: 30%;
-    padding: 20px;
+  float: right;
+  width: 60%;
+  right: 30%;
+  padding: 20px;
 
 }
 
-
 .call-to-action-img img{
-    width:60%;
+  width:60%;
 }
 
 .ctaimg1 {
-    float: right;
-    position: relative;
-    top: 0;
-    left: 115px;
+  float: right;
+  position: relative;
+  top: 0;
+  left: 115px;
 }
 
 .ctaimg2 {
-    position: absolute;
-    top: 37%;    
-    left: 65%;    
-    transform: translate(-30%, -180%);
- 
+  position: absolute;
+  top: 37%;
+  left: 65%;
+  transform: translate(-30%, -180%);
+
 }
 
 .cta-button {
-    margin:15px;
+  margin:15px;
 
 }
 
@@ -87,9 +84,9 @@
 
 /* MyGov Information */
 .mygov-info {
-    display: flex;
-    padding: 20px;
-    margin-bottom: 50px;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
 .info-column1 {
@@ -110,45 +107,42 @@
   padding-left: 40px;
 }
 
-
-
 .company_image img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    padding-right: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-right: 40px;
 }
 
 .companyimage2 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    padding-left: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-left: 40px;
 }
-
 
 /* Features */
 
 #features {
-    position: relative;
-    text-align: center;
-  }
-  
-  .feature-title {
-    font-size: 1.5rem;
-  }
-  
-  .feature-box {
-    padding: 4.5%;
-  }
-  
-  .icon {
-    color:  #343434;
-    margin-bottom: 1rem;
-  }
-  
-  .icon:hover {
-    color: #C0C0C0;
-  } 
+  position: relative;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color:  #343434;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #C0C0C0;
+}
