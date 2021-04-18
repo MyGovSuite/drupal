@@ -18,7 +18,7 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
-navbar_position: fixed-top
+navbar_position: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
