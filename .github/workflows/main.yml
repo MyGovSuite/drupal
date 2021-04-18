@@ -24,7 +24,7 @@ jobs:
     env:
       DOCKERHUB_REPO_NAME: mygov
       IMAGE_NAME: drupal-php
-      VERSION: 7.4
+      VERSION: 0.1
 
     steps:
       - uses: actions/checkout@v2
