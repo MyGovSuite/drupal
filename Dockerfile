@@ -15,3 +15,5 @@ COPY web/themes /opt/bitnami/drupal/web/themes
 COPY load.environment.php /opt/bitnami/drupal/load.environment.php
 COPY docker/overrides/drupal-vhost.conf /opt/bitnami/apache/conf/vhosts/drupal-vhost.conf
 COPY docker/overrides/drupal-https-vhost.conf /opt/bitnami/apache/conf/vhosts/drupal-https-vhost.conf
+COPY docker/overrides/services.yml /opt/bitnami/drupal/web/sites/default/services.yml
+COPY docker/overrides/settings.php /opt/bitnami/drupal/web/sites/default/settings.php
