@@ -1,4 +1,4 @@
-uuid: a1ec9bd7-77b0-4992-9f91-3d867215a471
+uuid: c660957a-3ae0-4f66-8ef5-c81415382d9b
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: exposedformsite_searchpage_1
 theme: mygov_theme
 region: navigation
-weight: -5
+weight: 0
 provider: null
 plugin: 'views_exposed_filter_block:site_search-page_1'
 settings:
@@ -24,6 +24,8 @@ settings:
 visibility:
   domain:
     id: domain
-    domains: {  }
-    negate: null
-    context_mapping: {  }
+    domains:
+      mygovcms_com: mygovcms_com
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
